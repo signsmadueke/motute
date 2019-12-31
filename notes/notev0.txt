@@ -1,0 +1,30 @@
+Greetins, Signs
+
+>>>> Re-Work <<<<
+
+I need you to please hold off on any other page or feature you are working on and concentrate on these tasks. I am hoping you get them ready by Saturday, October 26, 2019.
+
+>>> Develop an error page to be used to display any error from the server.
+
+>>> Develop a congratulations page to be displayed to the user upon registration to the platform.
+
+>>> Create a **return notice** div element to display a message or error in a form when a user is to submit an information.
+>>> >>> This should be implemented in the following form pages.
+>>> >>> >>> Log In
+>>> >>> >>> Register
+>>> >>> >>> Reset Password
+
+>>> Develop the form page for the user to reset his password: new password and confirm new password fields. The name of this form page should be password-reset.php. Remember to add the message or notice DIV.
+
+===============================================
+Database Priviledge
+===============================================
+Username: entrepre_admin
+Password: MotuteEntorm2019
+
+The SQL file is in the db folder.
+
+I believe these are all for now. In case, you need more clarification or have a question. Feel free to contact me at once.
+
+Regards,
+Nicholas Idoko

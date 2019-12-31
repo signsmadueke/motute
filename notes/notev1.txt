@@ -1,0 +1,21 @@
+Good Job, Signs
+
+Keep it work
+
+---------------------------------------------------
+
+Here are some of my observations:
+
+You have not worked on the responsive display of the header view when the hamburger icon is clicked. It is very important to work and activate this feature now that there is not yet so many files. 
+
+>>>> Please do this
+
+I also noticed that a particular file is missing in the package. **** quotes.svg **** do add this file if necessary, else remove all links to it via the entire files on the platform.
+
+--------- Next Task
+
+Pause the work you are doing on the course page and work on the edit profile page. This is >>> top priority <<< at the moment. I am hoping you research other LMS (Learning Management System) and construct the front-end to enable a user edit his or her profile and as well add other information.
+
+>> I hoping this task is to be ready by Sunday Evening. Once you have done it notify me and push to git.
+
+Thank you!

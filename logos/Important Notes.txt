@@ -1,0 +1,14 @@
+Hi Signs and to whom it may concern,
+
+For the design concepts, kindly find below vital information to aid your work.
+
+#Typeface used for logo design is -Aristoletica font (Bold and Regular respectively)-
+
+#Color HEXes used are:
+Primary Color HEX: 	#FB840D (which represents orange) - More details on the Ideology PDF also on the repo.
+Secondary Color HEX: 	#000000 (which represents black)
+Inverted Color HEX:	#FFFFFF (which represents white).
+
+Cheers!
+
+Clement.
