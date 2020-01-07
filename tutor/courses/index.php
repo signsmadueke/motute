@@ -152,13 +152,13 @@ require_once '../inc/sidebar.php';
         </div>
         <div class="align-items-center col-lg-4 col-md-4 col-sm-12 d-flex">
             <div class="col-12 h-100 no-gutters pb-50 text-center w-100">
-                <button class="tutor-courses empty inline">
+                <a href="new.php" class="h-100"><button class="tutor-courses empty inline">
                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none" class="svg icon replaced-svg">
                         <path d="M8.38235 0H6.61765V15H8.38235V0Z" fill="white"></path>
                         <path d="M0 6.61765L7.71378e-08 8.38235L15 8.38235V6.61765L0 6.61765Z" fill="white"></path>
                     </svg>
-                    <h4>Click here to add a course</h4>
-                </button>
+                    <h4>Create course</h4>
+                </button></a>
             </div>
         </div>
     </div>

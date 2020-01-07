@@ -25,7 +25,8 @@
 }
 
 .account .user {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 30px;
     height: 30px;
     border-radius: 10px;
@@ -77,7 +78,7 @@
 #body {
     padding-left: 70px;
     padding-bottom: 100px;
-    background: #FAFAFA;
+    background: #eeeeee;
     -webkit-transition: all .3s cubic-bezier(0.77, 0, 0.175, 1) 0s;
     transition: all .3s cubic-bezier(0.77, 0, 0.175, 1) 0s;
     position: relative;
@@ -85,7 +86,7 @@
 }
 
 #footer {
-    margin-left: 300px;
+    margin-left: 400px;
     -webkit-transition: all .3s cubic-bezier(0.77, 0, 0.175, 1) 0s;
     transition: all .3s cubic-bezier(0.77, 0, 0.175, 1) 0s;
 }
@@ -99,6 +100,7 @@
     box-shadow: 2px 0px 10px 0px rgba(0, 0, 0, 0.5);
     background-color: var(--text-heading);
     -webkit-transition: all .3s cubic-bezier(0.77, 0, 0.175, 1) 0s;
+    -webkit-transition: all .5s cubic-bezier(1, 0, 0, 1) 0s;
     transition: all .5s cubic-bezier(1, 0, 0, 1) 0s;
     left: 0;
     position: fixed;
@@ -239,7 +241,7 @@
     width: 100%;
     height: 300px;
     border-radius: 10px;
-    border: 2px dashed var(--brand-primary);
+    border: 2px dashed var(--text-body);
     position: absolute;
     -webkit-transition: all .3s ease-in-out 0s !important;
     transition: all .3s ease-in-out 0s !important;
@@ -251,15 +253,48 @@
     position: relative;
     cursor: pointer;
     margin-bottom: 10px;
-    background-color: rgba(251, 132, 13, 0.15);
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 .tutor-courses.empty:hover {
     color: var(--brand-white);
     background-color: rgba(255, 105, 0, 0.22);
-    box-shadow: 0 4px 17px rgba(255, 105, 0, 0.1);
+    border: 2px dashed var(--brand-primary);
+    box-shadow: 0px 20px 20px -10px rgba(255, 105, 0, 0.1);
     -webkit-transform: translateY(-3px);
     transform: translateY(-3px);
+}
+
+.tutor-courses.empty h4 {
+    color: var(--text-body);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    -webkit-transition: all .3s ease-in-out 0s !important;
+    transition: all .3s ease-in-out 0s !important;
+}
+
+
+.tutor-courses.empty:hover h4 {
+    color: var(--brand-primary);
+}
+
+
+.tutor-courses.empty svg {
+    margin-bottom: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+.tutor-courses.empty svg path {
+    fill: var(--text-body);
+    -webkit-transition: all .3s ease-in-out 0s !important;
+    transition: all .3s ease-in-out 0s !important;
+}
+
+
+.tutor-courses.empty:hover svg path {
+    fill: var(--brand-primary);
 }
 
 .course.tutor-courses .course-img {
@@ -362,23 +397,37 @@
 
 /*---------------------------------------*/
 
-#nav.header {
+#nav.create {
     background-color: var(--text-heading);
     color: var(--background-gray);
     padding: 0 !important;
+    z-index: 1030;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-#nav.header h6,
-#nav.header p {
+#nav.create.proto {
+    position: fixed !important;
+    padding-top: 0 !important;
+}
+
+#nav.create h6,
+#nav.create p {
     color: var(--background-gray);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
-#nav.header .border-right,
-#nav.header .border-left {
+#nav.create .border-right,
+#nav.create .border-left {
     border-color: rgba(255, 255, 255, 0.2);
+    display: block;
 }
 
-#nav.header .header-title {
+#nav.create .header-title {
     padding: 15px;
     height: 100%;
     text-align: left;
@@ -389,18 +438,19 @@
     height: 100%;
     border-radius: 0;
     background-color: transparent;
-    border: 1px solid transparent;
+    border: 0px solid transparent;
     color: var(--background-gray);
 }
 
 .header-btn:hover {
     color: var(--brand-white);
     fill: var(--brand-white);
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .header-btn:hover {
-    transform: none;
+    -webkit-transform: none;
+            transform: none;
 }
 
 .header-btn h6 {
@@ -430,6 +480,286 @@
     width: 20px;
 }
 
+/*------------------------------*/
+body.create {
+    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+#body #main.create {
+    padding: 0;
+}
+
+#main .side.create {
+    max-width: 400px;
+    width: 400px;
+    height: calc(100vh - 75px);
+    overflow-y: hidden;
+    overflow-x: hidden;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    -webkit-transition: all .3s cubic-bezier(0.77, 0, 0.175, 1) 0s;
+    -webkit-transition: all .5s cubic-bezier(1, 0, 0, 1) 0s;
+    transition: all .5s cubic-bezier(1, 0, 0, 1) 0s;
+    left: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+#main .body.create {
+    max-width: calc(100vw - 400px);
+    width: calc(100vw - 400px);
+    height: calc(100vh - 75px);
+    -webkit-transform: translate(400px, 0px);
+    transform: translate(400px, 0px);
+    overflow-y: hidden;
+    overflow-x: hidden;
+    -webkit-transition: all .3s cubic-bezier(0.77, 0, 0.175, 1) 0s;
+    -webkit-transition: all .5s cubic-bezier(1, 0, 0, 1) 0s;
+    transition: all .5s cubic-bezier(1, 0, 0, 1) 0s;
+    left: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+}
+
+#footer.create {
+    margin-left: 0;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    background-color: var(--background-gray);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    height: auto;
+}
+
+#footer.create p, 
+#footer.create a {
+    font-family: Soleil;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--text-body);
+    margin-bottom: 0;
+}
+
+#main .body.create #body-container {
+    height: calc(100% - 57px);
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+#main .body.create #body-container #body-header {
+    padding: 30px 30px;
+    display: block;
+    margin: 20px;
+    /* height: calc(100% - 40px); */
+    overflow: hidden;
+    background-color: var(--brand-white);
+    box-shadow: 0px 4px 10px rgba(194, 194, 194, 0.12);
+    border-radius: 10px;
+}
+
+#main .body.create #body-container #body-content {
+    padding: 30px 30px;
+    margin: 20px;
+    display: block;
+    background-color: var(--brand-white);
+    box-shadow: 0px 4px 10px rgba(194, 194, 194, 0.12);
+    border-radius: 10px;
+}
+
+/*------------------------------*/
+/*------------------------------*/
+/*------------------------------*/
+/*------------------------------*/
+#chapters {
+    height: calc((100% - 42px) - 40px);
+    overflow-y: hidden;
+    overflow-x: hidden;
+    /* display: block; */
+}
+
+.chapter {
+    margin: 20px 20px 0px 20px;
+    display: block;
+    position: relative;
+    width: 100%;
+    background: var(--brand-white);
+    box-shadow: 0px 4px 10px rgba(194, 194, 194, 0.12);
+    border-radius: 10px;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.chapter:nth-last-child(3) {
+    margin-bottom: 20px;
+}
+
+.chapter-actions {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    background-color: var(--background-gray);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    height: auto;
+}
+
+.ui-move-helper {
+  transition: none !important;
+  animation: pulse 0.4s alternate infinite;
+}
+
+.move-placeholder {
+  height: 60px;
+  width: 5px;
+  border-left: 2px solid #4999DA;
+  margin: 0 0 0.75rem 0;
+  position: relative;
+  z-index: 6;
+}
+
+@keyframes pulse {
+  100% {
+    transform: scale(1.1);
+  }
+}
+.cloned-chapters .chapter {
+  position: absolute;
+  z-index: 1;
+}
+
+
+.chapter .chapter-title {
+    font-family: CircularstdBold;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+    color: var(--text-heading);
+    /* margin: 0 20px; */
+    cursor: -webkit-grab;
+    cursor: grab;
+    position: relative;
+    display: block;
+    list-style-type: decimal;
+}
+
+.chapter .chapter-title a {
+    font-family: CircularstdBold;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+    color: var(--text-heading);
+    margin: 0px 56px 0px 47px;
+    padding: 20px 0px 20px 0px;
+    cursor: pointer;
+    position: relative;
+    display: block;
+}
+
+.chapter .chapter-title:before {
+    content: url(../../../assets/images/icons/drag.svg);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    -webkit-transition: all .3s ease-in-out 0s;
+    transition: all .3s ease-in-out 0s;
+}
+
+.chapter .chapter-title .expand:not(collapsed) {
+    content: url(../../../assets/images/icons/arrows/chevron-up.svg);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    -webkit-transition: all .3s ease-in-out 0s;
+    transition: all .3s ease-in-out 0s;
+    cursor: pointer;
+}
+
+.chapter .chapter-title .expand.collapsed {
+    content: url(../../../assets/images/icons/arrows/chevron-up.svg);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    -webkit-transition: all .3s ease-in-out 0s;
+    transition: all .3s ease-in-out 0s;
+    -webkit-transform: rotate(90deg) translate(-2px, 5px);
+    transform: rotate(180deg) translate(0px, 5px);
+    cursor: pointer;
+}
+
+.chapter .chapter-content {
+    padding: 0px 20px 0px 20px;
+}
+
+.chapter .chapter-content .lessons .lesson {
+    font-family: Soleil;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--text-heading);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    /* margin: 0 20px; */
+    padding: 20px 56px 20px 47px;
+    cursor: -webkit-grab;
+    cursor: pointer;
+    position: relative;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    -webkit-transition: all .3s ease-in-out 0s;
+    transition: all .3s ease-in-out 0s;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.chapter .chapter-content .lessons .lesson:last-child {
+    margin-bottom: 20px;
+}
+
+.chapter .chapter-content .lessons .lesson:hover {
+    box-shadow: 0px 4px 10px rgba(194, 194, 194, 0.12);
+}
+
+.chapter .chapter-content .lessons .lesson:before {
+    content: url(../../../assets/images/icons/drag.svg);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    -webkit-transition: all .3s ease-in-out 0s;
+    transition: all .3s ease-in-out 0s;
+}
+
+.chapter .chapter-content .lessons .lesson:after {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    -webkit-transition: all .3s ease-in-out 0s;
+    transition: all .3s ease-in-out 0s;
+}
+
+.chapter .chapter-content .lessons .lesson.video:after {
+    content: url(../../../assets/images/icons/video.svg);
+}
+
+.chapter .chapter-content .lessons .lesson.text:after {
+    content: url(../../../assets/images/icons/file-text.svg);
+}
+
+
 /*Responsiveness*/
 @media (max-width: 768px) {
     #nav.main {
@@ -439,6 +769,24 @@
 
     #body #main {
         padding-top: 200px;
+    }
+
+    #body #main.create {
+        padding: 0;
+    }
+
+    #main .side.create {
+        -webkit-transform: translate(-400px, 0px);
+        transform: translate(-400px, 0px);
+        width: 100vw;
+        max-width: 100vw;
+    }
+
+    #main .body.create {
+        -webkit-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
+        width: 100vw;
+        max-width: 100vw;
     }
 
     .header-btn {
@@ -462,6 +810,10 @@
     .header-title p {
         display: none;
     }
+
+    #main .body.create .settings {
+        padding: 30px 20px;
+        
 
 
 }

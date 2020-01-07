@@ -153,6 +153,17 @@ body {
     font-weight: normal;
 }
 
+.spaced-text {
+    font-family: Soleil;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-body);
+}
+
 h1,
 .h1,
 h2,
@@ -540,6 +551,334 @@ h6,
     opacity: 0.5;
 }
 
+
+/*------------------ CHAPTER BUTTON SMALL ----------------*/
+.btn-chapter {
+    color: var(--text-body) !important;
+    background-color: var(--brand-white) !important;
+    border: none;
+    border-radius: 0;
+    /* border-radius: 0 0 10px 10px; */
+    border-top: 1px solid rgba(0, 0, 0, 0.1) !important;
+    padding: 20px 25px;
+    font-family: Soleil;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    /* bottom: 0; */
+    /* position: absolute; */
+}
+
+.btn-chapter:hover,
+.btn-chapter.hover {
+    color: var(--text-heading) !important;
+    background-color: var(--background-offwhite) !important;
+    border: none;
+    transform: none;
+}
+
+.btn-chapter:active,
+.btn-chapter.active {
+    color: var(--text-heading) !important;
+    background-color: var(--background-gray) !important;
+    border: none;
+    transform: none;
+}
+
+.btn-chapter .svg path,
+.btn-chapter .svg path,
+.btn-chapter .svg path,
+.btn-chapter .svg path {
+    fill: var(--text-body) !important;
+}
+
+.btn-chapter:hover .svg path,
+.btn-chapter.hover .svg path,
+.btn-chapter:active .svg path,
+.btn-chapter.active .svg path,
+.show > .btn-chapter.dropdown-toggle .svg path {
+    fill: var(--text-heading) !important;
+}
+
+.btn-chapter.with-icon svg {
+    height: 10px;
+}
+
+.btn-chapter.icon-left svg {
+    margin-right: 10px;
+}
+
+.btn-chapter.icon-right svg {
+    margin-left: 10px;
+}
+
+.btn-chapter.icon-right, 
+.btn-chapter.icon-left {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.btn-chapter.icon-only svg {
+    height: 10px;
+}
+
+
+/*------------------ SECONDARY BUTTON SMALL ----------------*/
+.btn-secondary-sm {
+    color: var(--text-body) !important;
+    background-color: var(--brand-white) !important;
+    border: none;
+    border-radius: 0;
+    /* border-radius: 0 0 10px 10px; */
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    border-radius: 5px;
+    padding: 15px 25px;
+    font-family: Soleil;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.btn-secondary-sm:hover,
+.btn-secondary-sm.hover {
+    color: var(--text-heading) !important;
+    background-color: var(--background-offwhite) !important;
+}
+
+.btn-secondary-sm:active,
+.btn-secondary-sm.active {
+    color: var(--text-heading) !important;
+    background-color: var(--background-gray) !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    transform: scale(0.98);
+}
+
+.btn-secondary-sm .svg path,
+.btn-secondary-sm .svg path,
+.btn-secondary-sm .svg path,
+.btn-secondary-sm .svg path {
+    fill: var(--text-body) !important;
+}
+
+.btn-secondary-sm:hover .svg path,
+.btn-secondary-sm.hover .svg path,
+.btn-secondary-sm:active .svg path,
+.btn-secondary-sm.active .svg path,
+.show > .btn-secondary-sm.dropdown-toggle .svg path {
+    fill: var(--text-heading) !important;
+}
+
+.btn-secondary-sm.with-icon svg {
+    height: 10px;
+}
+
+.btn-secondary-sm.icon-left svg {
+    margin-right: 10px;
+}
+
+.btn-secondary-sm.icon-right svg {
+    margin-left: 10px;
+}
+
+.btn-secondary-sm.icon-right, 
+.btn-secondary-sm.icon-left {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.btn-secondary-sm.icon-only svg {
+    height: 10px;
+}
+
+/*------------------ DANGER BUTTON SMALL ----------------*/
+.btn-danger-sm {
+    color: var(--support-error) !important;
+    background-color: var(--brand-white) !important;
+    border: none;
+    border-radius: 0;
+    /* border-radius: 0 0 10px 10px; */
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    border-radius: 5px;
+    padding: 15px 25px;
+    font-family: Soleil;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.btn-danger-sm:hover,
+.btn-danger-sm.hover {
+    color: var(--support-error) !important;
+    background-color: rgba(189, 33, 48, 0.05) !important;
+    border: 1px solid rgba(189, 33, 48, 0.2) !important;
+}
+
+.btn-danger-sm:active,
+.btn-danger-sm.active {
+    color: var(--support-error) !important;
+    background-color: rgba(189, 33, 48, 0.1) !important;
+    border: 1px solid rgba(189, 33, 48, 0.2) !important;
+    transform: scale(0.98);
+}
+
+.btn-danger-sm .svg path,
+.btn-danger-sm .svg path,
+.btn-danger-sm .svg path,
+.btn-danger-sm .svg path {
+    fill: var(--support-error) !important;
+}
+
+.btn-danger-sm:hover .svg path,
+.btn-danger-sm.hover .svg path,
+.btn-danger-sm:active .svg path,
+.btn-danger-sm.active .svg path,
+.show > .btn-danger-sm.dropdown-toggle .svg path {
+    fill: var(--support-error) !important;
+}
+
+.btn-danger-sm.with-icon svg {
+    height: 10px;
+}
+
+.btn-danger-sm.icon-left svg {
+    margin-right: 5px;
+}
+
+.btn-danger-sm.icon-right svg {
+    margin-left: 10px;
+}
+
+.btn-danger-sm.icon-right, 
+.btn-danger-sm.icon-left {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.btn-danger-sm.icon-only svg {
+    height: 10px;
+}
+
+
+/*------------------ ICON BUTTON SMALL ----------------*/
+.btn-icon-only {
+    color: none !important;
+    background-color: none !important;
+    border: none;
+    border-radius: 0;
+    padding: 0 36px;
+}
+
+.btn-icon-only:hover,
+.btn-icon-only.hover {
+    color: none !important;
+    background-color: none !important;
+}
+
+.btn-icon-only:active,
+.btn-icon-only.active {
+    color: none !important;
+    background-color: none !important;
+    border: none !important;
+    transform: scale(0.98);
+}
+
+.btn-icon-only svg {
+    height: 40px;
+    width: 40px;
+}
+
+.btn-icon-only .svg path,
+.btn-icon-only .svg path,
+.btn-icon-only .svg path,
+.btn-icon-only .svg path {
+    fill: var(--text-body) !important;
+}
+
+.btn-icon-only:hover .svg path,
+.btn-icon-only.hover .svg path,
+.btn-icon-only:active .svg path,
+.btn-icon-only.active .svg path {
+    fill: var(--text-heading) !important;
+}
+
+
+
+/*------------------ PRIMARY BUTTON SMALL ----------------*/
+.btn-primary-sm {
+    color: var(--brand-white) !important;
+    background-color: var(--brand-primary) !important;
+    border: 1px solid var(--brand-primary) !important;
+    border-radius: 5px;
+    padding: 15px 25px;
+    font-family: Soleil;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.btn-primary-sm:hover,
+.btn-primary-sm.hover {
+    color: var(--brand-white) !important;
+    background-color: var(--brand-primary-dark) !important;
+    border: 1px solid var(--brand-primary-dark) !important;
+}
+
+.btn-primary-sm:active,
+.btn-primary-sm.active {
+    color: var(--brand-white) !important;
+    background-color: var(--brand-primary-dark) !important;
+    border: 1px solid var(--brand-primary-dark) !important;
+    transform: scale(0.98);
+}
+
+.btn-primary-sm .svg path,
+.btn-primary-sm .svg path,
+.btn-primary-sm .svg path,
+.btn-primary-sm .svg path {
+    fill: var(--brand-primary) !important;
+}
+
+.btn-primary-sm:hover .svg path,
+.btn-primary-sm.hover .svg path,
+.btn-primary-sm:active .svg path,
+.btn-primary-sm.active .svg path,
+.show > .btn-primary-sm.dropdown-toggle .svg path {
+    fill: var(--brand-primary) !important;
+}
+
+.btn-primary-sm.with-icon svg {
+    height: 10px;
+}
+
+.btn-primary-sm.icon-left svg {
+    margin-right: 10px;
+}
+
+.btn-primary-sm.icon-right svg {
+    margin-left: 10px;
+}
+
+.btn-primary-sm.icon-right, 
+.btn-primary-sm.icon-left {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.btn-primary-sm.icon-only svg {
+    height: 10px;
+}
 
 
 

@@ -7,16 +7,17 @@ require_once 'inc/header.php';
 
     <section id="settings" class="container pb-50">
         <div class="text-center w-100 pt-50 pb-50">
-            <ul class="nav tabs" id="myTab" role="tablist">
+            <ul class="nav tabs">
                 <li class="tab tab-secondary">
-                    <a class="active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true"><span>Profile</span></a>
+                    <a class="active" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true"><span>Profile</span></a>
                 </li>
                 <li class="tab tab-secondary">
-                    <a class="" id="account-tab" data-toggle="tab" href="#account" role="tab" aria-controls="account" aria-selected="false"><span>Account</span></a>
+                    <a class=""  data-toggle="tab" href="#account" role="tab" aria-controls="account" aria-selected="false"><span>Account</span></a>
                 </li>
+                
             </ul>
         </div>
-        <div class="tab-content" id="myTabContent">
+        <div class="tab-content">
             <div class="tab-pane fade active show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                 <form action="">
                     <section id="tab-title" class="pb-50">

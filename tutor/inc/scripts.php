@@ -2,6 +2,9 @@
 <script src="../../assets/js/popper.js"></script>
 <script src="../../assets/js/jquery.js"></script>
 <script src="../../assets/js/bootstrap.min.js"></script>
+<script src="../../assets/js/jquery-ui.js"></script>
 <script src="../../assets/js/owl.carousel.js"></script>
 <script src="../../assets/js/custom.js"></script>
+<script src="../../assets/js/tippy.js"></script>
+<script src="../../assets/js/perfect-scrollbar.js"></script>
 <script src="../assets/js/dashboard.js"></script>
