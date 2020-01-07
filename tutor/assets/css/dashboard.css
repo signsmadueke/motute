@@ -579,8 +579,8 @@ body.create {
 /*------------------------------*/
 #chapters {
     height: calc((100% - 42px) - 40px);
-    overflow-y: hidden;
-    overflow-x: hidden;
+    overflow-y: auto;
+    overflow-x: auto;
     /* display: block; */
 }
 
@@ -759,6 +759,19 @@ body.create {
     content: url(../../../assets/images/icons/file-text.svg);
 }
 
+#main .side.create.hide {
+    -webkit-transform: translate(-400px, 0px);
+    transform: translate(-400px, 0px);
+    border-right: none;
+}
+
+#main .body.create.show {
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+    width: 100vw;
+    max-width: 100vw;
+}
+
 
 /*Responsiveness*/
 @media (max-width: 768px) {
@@ -776,13 +789,29 @@ body.create {
     }
 
     #main .side.create {
-        -webkit-transform: translate(-400px, 0px);
-        transform: translate(-400px, 0px);
+        -webkit-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
+        width: 100vw;
+        max-width: 100vw;
+        border-right: none;
+    }
+
+    #main .body.create {
+        -webkit-transform: translate(400px, 0px);
+        transform: translate(400px, 0px);
         width: 100vw;
         max-width: 100vw;
     }
 
-    #main .body.create {
+    #main .side.create.hide {
+        -webkit-transform: translate(-100vw, 0px);
+        transform: translate(-100vw, 0px);
+        width: 100vw;
+        max-width: 100vw;
+        border-right: none;
+    }
+
+    #main .body.create.show {
         -webkit-transform: translate(0px, 0px);
         transform: translate(0px, 0px);
         width: 100vw;

@@ -2,6 +2,14 @@ $("#body #sidebar").hover(function () {
     var $sidebar = $('#sidebar');
     $sidebar.toggleClass("hide");
 });
+
+$(".menu").click(function () {
+    var $sidebar = $('.side.create');
+    var $body = $('.body.create');
+    $sidebar.toggleClass("hide");
+    $body.toggleClass("show");
+});
+
 $('#main .body.create').css({
     'height': "calc(100vh - " + $('#nav').height() + "px)"
 });
@@ -14,13 +22,26 @@ $('#main .side.create #chapters').css({
     'height': "calc(100% - " + $('.chapter-actions').height() + "px - 40px)"
 });
 
+// const ps1 = new
+// 	PerfectScrollbar('.scrollbar', {
+// 	wheelSpeed: 2,
+// 	wheelPropagation: true,
+// 	minScrollbarLength: 20
+// });
 
 const ps = new
-	PerfectScrollbar('#chapters', {
+	PerfectScrollbar('#body-container', {
 	wheelSpeed: 2,
 	wheelPropagation: true,
 	minScrollbarLength: 20
 });
+
+// const ps = new
+// 	PerfectScrollbar('#chapters', {
+// 	wheelSpeed: 2,
+// 	wheelPropagation: true,
+// 	minScrollbarLength: 20
+// });
 
 	tippy('.lesson', {
         placement: 'top',
