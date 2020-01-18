@@ -30,7 +30,7 @@ $('#main .side.create #chapters').css({
 // });
 
 const ps = new
-	PerfectScrollbar('#body-container', {
+	PerfectScrollbar('#chapters', {
 	wheelSpeed: 2,
 	wheelPropagation: true,
 	minScrollbarLength: 20
@@ -53,39 +53,166 @@ const ps = new
     });
 
 $( function() {
-    $( "#sortable" ).sortable();
-    $( "#sortable" ).disableSelection();
+    $( "#chapters" ).sortable({
+    	  handle: ".chapter-move",
+    	  axis: "y",
+		  revert: true
+		  // scroll: false,
+		  // cursor: "move"
+    });
+    $( "#chapters" ).disableSelection();
  });
 
-// function loadDoc(url, cFunction) {
-//   var xhttp;
-//   xhttp=new XMLHttpRequest();
-//   xhttp.onreadystatechange = function() {
-//     if (this.readyState == 4 && this.status == 200) {
-//       cFunction(this);
-//     }
-//   };
-//   xhttp.open("GET", url, true);
-//   xhttp.send();
-// }
-// function myFunction(xhttp) {
-//   document.getElementById("demo").innerHTML =
-//   xhttp.responseText;
-// }
+$( function() {
+    $( ".lessons" ).sortable({
+		axis: "y",
+		revert: true
+		// scroll: false,
+		// cursor: "move"
+    });
+    $( ".lessons" ).disableSelection();
+ });
 
-// function ajax_post(){
-//  var hr = new XMLHttpRequest();
-//  var url = "processor.php";
-//  var emm = document.getElementById("email").value;
-//  var vars = "email="+emm;
-//  hr.open("POST", url, true);
-//  hr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-//  hr.onreadystatechange = function() {
-//  if(hr.readyState == 4 && hr.status == 200) {
-//  var return_data = hr.responseText;
-//  document.getElementById("status").innerHTML = return_data;
-//  }
-//  }
-//  hr.send(vars); // After Check Steps are done execute the request
-//  document.getElementById("status").innerHTML = "processing...";
-// }
+// $(document).ready(function () {
+//     var dropIndex;
+//     $("#image-list").sortable({
+//         	update: function(event, ui) { 
+//         		dropIndex = ui.item.index();
+//         }
+//     });
+// });
+
+$(document).ready(function(){
+	Dropzone.options.videoDropzone = { // The camelized version of the ID of the form element
+	    // The configuration we've talked about above
+	    url: '#',
+	    previewsContainer: ".dropzone-previews",
+	    uploadMultiple: true,
+	    parallelUploads: 100,
+		maxFiles: 100
+	}
+});
+
+'use strict';
+
+let url_ajax_path = {
+	add_chapter:"../../courses/new/edit/chapter.php",
+	edit_chapter:"../../courses/new/edit/chapter.php",
+
+	add_lesson_video:"../../courses/new/add/lesson/video.php",
+	add_lesson_audio:"../../courses/new/add/lesson/audio.php",
+	add_lesson_text:"../../courses/new/add/lesson/text.php",
+	add_lesson_download:"../../courses/new/add/lesson/download.php",
+	add_lesson_exam:"../../courses/new/add/lesson/exam.php",
+
+	edit_lesson_video:"../../courses/new/edit/lesson/video.php",
+	edit_lesson_audio:"../../courses/new/edit/lesson/audio.php",
+	edit_lesson_text:"../../courses/new/edit/lesson/text.php",
+	edit_lesson_download:"../../courses/new/edit/lesson/download.php",
+	edit_lesson_exam:"../../courses/new/edit/lesson/exam.php"
+};
+
+$(document).ready(function() {
+	/*--------------- CHAPTERS START --------------- */
+	$(".add-chapter").click(function(e) {
+		e.preventDefault();
+		$.get(url_ajax_path.add_chapter, function(data) {
+			$("#body-container").empty();
+			$("#body-container").html(data);
+		});
+	});
+
+	$(".chapter-title a").click(function(e) {
+		e.preventDefault();
+		$.get(url_ajax_path.edit_chapter, function(data) {
+			$("#body-container").empty();
+			$("#body-container").html(data);
+		});
+	});
+	/*--------------- CHAPTERS END --------------- */
+
+	/*--------------- LESSONS ADD START --------------- */
+	$(".lesson-type.type-video").click(function(e) {
+		e.preventDefault();
+		$.get(url_ajax_path.add_lesson_video, function(data) {
+			$("#body-container").empty();
+			$("#body-container").html(data);
+		});
+	});
+
+	$(".lesson-type.type-text").click(function(e) {
+		e.preventDefault();
+		$.get(url_ajax_path.add_lesson_text, function(data) {
+			$("#body-container").empty();
+			$("#body-container").html(data);
+		});
+	});
+
+	$(".lesson-type.type-audio").click(function(e) {
+		e.preventDefault();
+		$.get(url_ajax_path.add_lesson_audio, function(data) {
+			$("#body-container").empty();
+			$("#body-container").html(data);
+		});
+	});
+
+	$(".lesson-type.type-download").click(function(e) {
+		e.preventDefault();
+		$.get(url_ajax_path.add_lesson_download, function(data) {
+			$("#body-container").empty();
+			$("#body-container").html(data);
+		});
+	});
+
+	$(".lesson-type.type-exam").click(function(e) {
+		e.preventDefault();
+		$.get(url_ajax_path.add_lesson_exam, function(data) {
+			$("#body-container").empty();
+			$("#body-container").html(data);
+		});
+	});
+	/*--------------- LESSONS ADD END --------------- */
+
+	/*--------------- LESSONS EDIT START --------------- */
+	$(".lesson.video").click(function(e) {
+		e.preventDefault();
+		$.get(url_ajax_path.edit_lesson_video, function(data) {
+			$("#body-container").empty();
+			$("#body-container").html(data);
+		});
+	});
+
+	$(".lesson.text").click(function(e) {
+		e.preventDefault();
+		$.get(url_ajax_path.edit_lesson_text, function(data) {
+			$("#body-container").empty();
+			$("#body-container").html(data);
+		});
+	});
+
+	$(".lesson.audio").click(function(e) {
+		e.preventDefault();
+		$.get(url_ajax_path.edit_lesson_audio, function(data) {
+			$("#body-container").empty();
+			$("#body-container").html(data);
+		});
+	});
+
+	$(".lesson.download").click(function(e) {
+		e.preventDefault();
+		$.get(url_ajax_path.edit_lesson_download, function(data) {
+			$("#body-container").empty();
+			$("#body-container").html(data);
+		});
+	});
+
+	$(".lesson.exam").click(function(e) {
+		e.preventDefault();
+		$.get(url_ajax_path.edit_lesson_exam, function(data) {
+			$("#body-container").empty();
+			$("#body-container").html(data);
+		});
+	});
+	/*--------------- LESSONS EDIT END --------------- */
+
+});

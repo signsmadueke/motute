@@ -5,8 +5,8 @@
 
 
 *::selection {
-    background-color: rgba(0, 0, 0, 0.1) !important;
-    color: var(--text-heading) !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    color: var(--background-gray) !important;
 }
 
 /* width */
@@ -18,14 +18,14 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: rgba(42, 42, 42, 0.2);
-    border-radius: 3px;
+    background: rgba(42, 42, 42, 0.15);
+    /* border-radius: 3px; */
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: var(--text-heading) !important;
-    border-radius: 3px;
+    background: rgba(42, 42, 42, 0.5) !important;
+    /* border-radius: 3px; */
 }
 
 /*Responsiveness*/
