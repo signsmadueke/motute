@@ -128,7 +128,7 @@ $(document).ready(function(){
         rewind: true
     });
 
-    tippy('.lesson', {
+    tippy('.playlist .lesson', {
         placement: 'top',
         theme: 'pop',
         duration: [275, 250],

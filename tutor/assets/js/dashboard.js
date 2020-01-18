@@ -11,15 +11,15 @@ $(".menu").click(function () {
 });
 
 $('#main .body.create').css({
-    'height': "calc(100vh - " + $('#nav').height() + "px)"
+    'padding-top': $('#nav').height() + "px"
 });
 
 $('#main .side.create').css({
-    'height': "calc(100vh - " + $('#nav').height() + "px)"
+    'padding-top': $('#nav').height() + "px"
 });
 
 $('#main .side.create #chapters').css({
-    'height': "calc(100% - " + $('.chapter-actions').height() + "px - 40px)"
+    'padding-bottom': $('.chapter-actions').height() + 40 + "px"
 });
 
 // const ps1 = new
@@ -43,14 +43,24 @@ const ps = new
 // 	minScrollbarLength: 20
 // });
 
-	tippy('.lesson', {
+	tippy('.lesson .lesson-title', {
         placement: 'top',
         theme: 'pop',
-        duration: [275, 250],
+        // duration: [275, 250],
         arrow: true,
         delay: [500],
         followCursor: 'horizontal',
     });
+
+    tippy('.lesson .lesson-settings-btn', {
+        placement: 'top',
+        theme: 'pop',
+        // duration: [275, 250],
+        arrow: true,
+        delay: [500],
+        // followCursor: 'horizontal',
+    });
+
 
 $( function() {
     $( "#chapters" ).sortable({
@@ -65,6 +75,7 @@ $( function() {
 
 $( function() {
     $( ".lessons" ).sortable({
+		handle: ".chapter-move",
 		axis: "y",
 		revert: true
 		// scroll: false,
@@ -122,7 +133,7 @@ $(document).ready(function() {
 		});
 	});
 
-	$(".chapter-title a").click(function(e) {
+	$(".chapter-title .chapter-settings-btn").click(function(e) {
 		e.preventDefault();
 		$.get(url_ajax_path.edit_chapter, function(data) {
 			$("#body-container").empty();
@@ -174,7 +185,7 @@ $(document).ready(function() {
 	/*--------------- LESSONS ADD END --------------- */
 
 	/*--------------- LESSONS EDIT START --------------- */
-	$(".lesson.video").click(function(e) {
+	$(".lesson.video .lesson-settings-btn").click(function(e) {
 		e.preventDefault();
 		$.get(url_ajax_path.edit_lesson_video, function(data) {
 			$("#body-container").empty();
@@ -182,7 +193,7 @@ $(document).ready(function() {
 		});
 	});
 
-	$(".lesson.text").click(function(e) {
+	$(".lesson.text .lesson-settings-btn").click(function(e) {
 		e.preventDefault();
 		$.get(url_ajax_path.edit_lesson_text, function(data) {
 			$("#body-container").empty();
@@ -190,7 +201,7 @@ $(document).ready(function() {
 		});
 	});
 
-	$(".lesson.audio").click(function(e) {
+	$(".lesson.audio .lesson-settings-btn").click(function(e) {
 		e.preventDefault();
 		$.get(url_ajax_path.edit_lesson_audio, function(data) {
 			$("#body-container").empty();
@@ -198,7 +209,7 @@ $(document).ready(function() {
 		});
 	});
 
-	$(".lesson.download").click(function(e) {
+	$(".lesson.download .lesson-settings-btn").click(function(e) {
 		e.preventDefault();
 		$.get(url_ajax_path.edit_lesson_download, function(data) {
 			$("#body-container").empty();
@@ -206,7 +217,7 @@ $(document).ready(function() {
 		});
 	});
 
-	$(".lesson.exam").click(function(e) {
+	$(".lesson.exam .lesson-settings-btn").click(function(e) {
 		e.preventDefault();
 		$.get(url_ajax_path.edit_lesson_exam, function(data) {
 			$("#body-container").empty();

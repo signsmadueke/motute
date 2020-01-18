@@ -463,13 +463,15 @@
 #nav.create {
     background-color: var(--text-heading);
     color: var(--background-gray);
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
     padding: 0 !important;
     z-index: 1030;
     -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 #nav.create.proto {
@@ -559,6 +561,7 @@ body.create {
     overflow: hidden;
     background: #eeeeee;
     display: block;
+    position: relative;
 }
 
 #body #main.create {
@@ -568,7 +571,8 @@ body.create {
 #main .side.create {
     max-width: 400px;
     width: 400px;
-    /* height: calc(100vh - 75px); */
+    height: 100vh;
+    padding-top: 75px;
     overflow-y: hidden;
     overflow-x: hidden;
     border-right: 1px solid rgba(0, 0, 0, 0.1);
@@ -587,14 +591,13 @@ body.create {
     max-width: -moz-calc(100vw - 400px);
     max-width: calc(100vw - 400px);
     width: 100%;
-    height: -webkit-calc(100vh - 75px);
-    height: -moz-calc(100vh - 75px);
-    height: calc(100vh - 75px);
+    height: 100vh;
+    padding-top: 75px;
     -webkit-transform: translate(400px, 0px);
-       -moz-transform: translate(400px, 0px);
-        -ms-transform: translate(400px, 0px);
-         -o-transform: translate(400px, 0px);
-            transform: translate(400px, 0px);
+    -moz-transform: translate(400px, 0px);
+    -ms-transform: translate(400px, 0px);
+    -o-transform: translate(400px, 0px);
+    transform: translate(400px, 0px);
     overflow-y: hidden;
     overflow-x: hidden;
     -webkit-transition: all .5s cubic-bezier(1, 0, 0, 1) 0s;
@@ -698,9 +701,8 @@ body.create {
 /*------------------------------*/
 /*------------------------------*/
 #chapters {
-    height: -webkit-calc((100% - 42px) - 40px);
-    height: -moz-calc((100% - 42px) - 40px);
-    height: calc((100% - 42px) - 40px);
+    height: 100%;
+    padding-bottom: 83px;
     overflow-y: auto;
     overflow-x: auto;
     display: list-item;
@@ -936,27 +938,44 @@ body.create {
     cursor: pointer;
 }
 
+.chapter .chapter-title .expand.collapsed svg path,
+.chapter .chapter-title .chapter-settings-btn svg path,
+.chapter .chapter-title .chapter-move svg path,
+.chapter .chapter-content .lessons .lesson .chapter-move svg {
+    -webkit-transition: all .3s ease-in-out 0s;
+    -o-transition: all .3s ease-in-out 0s;
+    -moz-transition: all .3s ease-in-out 0s;
+    transition: all .3s ease-in-out 0s;
+}
+
+.chapter .chapter-title .expand.collapsed svg:hover path, .chapter .chapter-title .chapter-settings-btn svg:hover path, .chapter .chapter-title .chapter-move svg:hover path, .chapter .chapter-content .lessons .lesson .chapter-move svg:hover path, .chapter .chapter-content .lessons .lesson .lesson-settings-btn:hover svg path {
+    fill: var(--brand-primary);
+}
+
 .chapter .chapter-content .lessons .lesson {
+    background-color: var(--brand-white);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0px 62px 0px 49px;
+    /* cursor: pointer; */
+    position: relative;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.chapter .chapter-content .lessons .lesson p {
     font-family: Soleil;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 16px;
+    margin-bottom: 0;
+    padding: 20px 0;
     color: var(--text-heading);
-    background-color: var(--brand-white);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    /* margin: 0 20px; */
-    padding: 20px 56px 20px 47px;
-    cursor: pointer;
-    position: relative;
-    -webkit-border-radius: 5px;
-       -moz-border-radius: 5px;
-            border-radius: 5px;
-    margin-bottom: 10px;
-    /* transition: all .3s ease-in-out 0s; */
     overflow: hidden;
     -o-text-overflow: ellipsis;
-       text-overflow: ellipsis;
+    text-overflow: ellipsis;
     white-space: nowrap;
 }
 
@@ -966,20 +985,52 @@ body.create {
 
 .chapter .chapter-content .lessons .lesson:hover {
     -webkit-box-shadow: 0px 4px 10px rgba(194, 194, 194, 0.12);
-       -moz-box-shadow: 0px 4px 10px rgba(194, 194, 194, 0.12);
-            box-shadow: 0px 4px 10px rgba(194, 194, 194, 0.12);
-    background-color: var(--background-offwhite) !important;
+    -moz-box-shadow: 0px 4px 10px rgba(194, 194, 194, 0.12);
+    box-shadow: 0px 4px 10px rgba(194, 194, 194, 0.12);
+    /* background-color: var(--background-offwhite) !important; */
 }
 
-.chapter .chapter-content .lessons .lesson:before {
-    content: url(../../../assets/images/icons/drag.svg);
+.chapter .chapter-content .lessons .lesson .chapter-move svg,
+.chapter .chapter-content .lessons .lesson .chapter-move img {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    padding: 0px 20px;
     -webkit-transition: all .3s ease-in-out 0s;
     -o-transition: all .3s ease-in-out 0s;
     -moz-transition: all .3s ease-in-out 0s;
     transition: all .3s ease-in-out 0s;
+    cursor: pointer;
+}
+
+.chapter .chapter-content .lessons .lesson .lesson-settings-btn {
+    position: absolute;
+    /* display: block; */
+    /* width: 16px; */
+    height: 100%;
+    top: 0px;
+    right: 36px;
+    padding: 16px 5px;
+    -webkit-transition: all .3s ease-in-out 0s;
+    -o-transition: all .3s ease-in-out 0s;
+    -moz-transition: all .3s ease-in-out 0s;
+    transition: all .3s ease-in-out 0s;
+    cursor: pointer;
+}
+
+.chapter .chapter-content .lessons .lesson .lesson-settings-btn svg,
+.chapter .chapter-content .lessons .lesson .lesson-settings-btn img {
+    width: 16px;
+    height: 16px;
+    top: 0px;
+    /* right: 36px; */
+    /* padding: 20px 5px; */
+    -webkit-transition: all .3s ease-in-out 0s;
+    -o-transition: all .3s ease-in-out 0s;
+    -moz-transition: all .3s ease-in-out 0s;
+    transition: all .3s ease-in-out 0s;
+    cursor: pointer;
 }
 
 .chapter .chapter-content .lessons .lesson:after {
