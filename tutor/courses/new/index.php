@@ -80,33 +80,33 @@ $title = 'Add New Course';
                             </a>
                         </div>
                         <div id="chapter-1" class="chapter-content collapse show" role="tabpanel" style="">
-                            <div class="lessons">
+                            <ol class="lessons">
                                 <div class="lesson video">
                                     <a href="#" class="chapter-move"><img width="20px" src="../../../assets/images/icons/drag.svg" class="svg icon" alt=""></a>
-                                    <p data-tippy-content="Database Models" class="lesson-title">Message from the instructor</p>
+                                    <li data-tippy-content="Database Models" class="lesson-title">&nbsp;Message from the instructor</li>
                                     <a href="#" class="lesson-settings-btn" data-tippy-content="Edit Lesson"><img width="16px" src="../../../assets/images/icons/edit.svg" class="svg icon" alt=""></a>
                                 </div>
                                 <div class="lesson text">
                                     <a href="#" class="chapter-move"><img width="20px" src="../../../assets/images/icons/drag.svg" class="svg icon" alt=""></a>
-                                    <p data-tippy-content="Database Models" class="lesson-title">How to Use the Mini-Course Template</p>
+                                    <li data-tippy-content="Database Models" class="lesson-title">&nbsp;How to Use the Mini-Course Template</li>
                                     <a href="#" class="lesson-settings-btn" data-tippy-content="Edit Lesson"><img width="16px" src="../../../assets/images/icons/edit.svg" class="svg icon" alt=""></a>
                                 </div>
                                 <div class="lesson audio">
                                     <a href="#" class="chapter-move"><img width="20px" src="../../../assets/images/icons/drag.svg" class="svg icon" alt=""></a>
-                                    <p data-tippy-content="Database Models" class="lesson-title">The proven benefits of this course</p>
+                                    <li data-tippy-content="Database Models" class="lesson-title">&nbsp;The proven benefits of this course</li>
                                     <a href="#" class="lesson-settings-btn" data-tippy-content="Edit Lesson"><img width="16px" src="../../../assets/images/icons/edit.svg" class="svg icon" alt=""></a>
                                 </div>
                                 <div class="lesson download">
                                     <a href="#" class="chapter-move"><img width="20px" src="../../../assets/images/icons/drag.svg" class="svg icon" alt=""></a>
-                                    <p data-tippy-content="Database Models" class="lesson-title">Before we begin...</p>
+                                    <li data-tippy-content="Database Models" class="lesson-title">&nbsp;Before we begin...</li>
                                     <a href="#" class="lesson-settings-btn" data-tippy-content="Edit Lesson"><img width="16px" src="../../../assets/images/icons/edit.svg" class="svg icon" alt=""></a>
                                 </div>
                                 <div class="lesson exam">
                                     <a href="#" class="chapter-move"><img width="20px" src="../../../assets/images/icons/drag.svg" class="svg icon" alt=""></a>
-                                    <p data-tippy-content="Database Models" class="lesson-title">Why is the web, the web?</p>
+                                    <li data-tippy-content="Database Models" class="lesson-title">&nbsp;Why is the web, the web?</li>
                                     <a href="#" class="lesson-settings-btn" data-tippy-content="Edit Lesson"><img width="16px" src="../../../assets/images/icons/edit.svg" class="svg icon" alt=""></a>
                                 </div>
-                            </div>
+                            </ol>
                         </div>
                         <div id="chapter-types-1" class="lesson-types no-gutters row collapse" role="tabpanel">
                             <div class="col-3">
@@ -142,18 +142,18 @@ $title = 'Add New Course';
                             </a>
                         </div>
                         <div id="chapter-2" class="chapter-content collapse" role="tabpanel" style="">
-                            <div class="lessons">
+                            <ol class="lessons">
                                 <div class="lesson video">
                                     <a href="#" class="chapter-move"><img width="20px" src="../../../assets/images/icons/drag.svg" class="svg icon" alt=""></a>
-                                    <p data-tippy-content="Database Models" class="lesson-title">The proven benefits of this course</p>
+                                    <li data-tippy-content="Database Models" class="lesson-title">&nbsp;The proven benefits of this course</li>
                                     <a href="#" class="lesson-settings-btn" data-tippy-content="Edit Lesson"><img width="16px" src="../../../assets/images/icons/edit.svg" class="svg icon" alt=""></a>
                                 </div>
                                 <div class="lesson text">
                                     <a href="#" class="chapter-move"><img width="20px" src="../../../assets/images/icons/drag.svg" class="svg icon" alt=""></a>
-                                    <p data-tippy-content="Database Models" class="lesson-title">Before we begin...</p>
+                                    <li data-tippy-content="Database Models" class="lesson-title">&nbsp;Before we begin...</li>
                                     <a href="#" class="lesson-settings-btn" data-tippy-content="Edit Lesson"><img width="16px" src="../../../assets/images/icons/edit.svg" class="svg icon" alt=""></a>
                                 </div>
-                            </div>
+                            </ol>
                         </div>
                         <div id="chapter-types-2" class="lesson-types no-gutters row collapse" role="tabpanel">
                             <div class="col-3">
@@ -189,23 +189,23 @@ $title = 'Add New Course';
                             </a>
                         </div>
                         <div id="chapter-3" class="chapter-content collapse" role="tabpanel" style="">
-                            <div class="lessons">
+                            <ol class="lessons">
                                 <div class="lesson video">
                                     <a href="#" class="chapter-move"><img width="20px" src="../../../assets/images/icons/drag.svg" class="svg icon" alt=""></a>
-                                    <p data-tippy-content="Database Models" class="lesson-title">Why is the web, the web?</p>
+                                    <li data-tippy-content="Database Models" class="lesson-title">&nbsp;Why is the web, the web?</li>
                                     <a href="#" class="lesson-settings-btn" data-tippy-content="Edit Lesson"><img width="16px" src="../../../assets/images/icons/edit.svg" class="svg icon" alt=""></a>
                                 </div>
                                 <div class="lesson video">
                                     <a href="#" class="chapter-move"><img width="20px" src="../../../assets/images/icons/drag.svg" class="svg icon" alt=""></a>
-                                    <p data-tippy-content="Database Models" class="lesson-title">What is markup?</p>
+                                    <li data-tippy-content="Database Models" class="lesson-title">&nbsp;What is markup?</li>
                                     <a href="#" class="lesson-settings-btn" data-tippy-content="Edit Lesson"><img width="16px" src="../../../assets/images/icons/edit.svg" class="svg icon" alt=""></a>
                                 </div>
                                 <div class="lesson text">
                                     <a href="#" class="chapter-move"><img width="20px" src="../../../assets/images/icons/drag.svg" class="svg icon" alt=""></a>
-                                    <p data-tippy-content="Database Models" class="lesson-title">Tags: the building blocks</p>
+                                    <li data-tippy-content="Database Models" class="lesson-title">&nbsp;Tags: the building blocks</li>
                                     <a href="#" class="lesson-settings-btn" data-tippy-content="Edit Lesson"><img width="16px" src="../../../assets/images/icons/edit.svg" class="svg icon" alt=""></a>
                                 </div>
-                            </div>
+                            </ol>
                         </div>
                         <div id="chapter-types-3" class="lesson-types no-gutters row collapse" role="tabpanel">
                             <div class="col-3">

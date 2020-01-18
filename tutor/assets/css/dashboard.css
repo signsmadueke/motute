@@ -564,6 +564,15 @@ body.create {
     position: relative;
 }
 
+#main.create {
+    height: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    background: #eeeeee;
+    display: block;
+    position: relative;
+}
+
 #body #main.create {
     padding: 0;
 }
@@ -571,7 +580,7 @@ body.create {
 #main .side.create {
     max-width: 400px;
     width: 400px;
-    height: 100vh;
+    height: 100%;
     padding-top: 75px;
     overflow-y: hidden;
     overflow-x: hidden;
@@ -591,7 +600,7 @@ body.create {
     max-width: -moz-calc(100vw - 400px);
     max-width: calc(100vw - 400px);
     width: 100%;
-    height: 100vh;
+    height: 100%;
     padding-top: 75px;
     -webkit-transform: translate(400px, 0px);
     -moz-transform: translate(400px, 0px);
@@ -952,6 +961,10 @@ body.create {
     fill: var(--brand-primary);
 }
 
+.chapter .chapter-content .lessons {
+    list-style: disc inside;
+}
+
 .chapter .chapter-content .lessons .lesson {
     background-color: var(--brand-white);
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -964,7 +977,7 @@ body.create {
     margin-bottom: 10px;
 }
 
-.chapter .chapter-content .lessons .lesson p {
+.chapter .chapter-content .lessons .lesson li {
     font-family: Soleil;
     font-style: normal;
     font-weight: normal;
@@ -973,6 +986,8 @@ body.create {
     margin-bottom: 0;
     padding: 20px 0;
     color: var(--text-heading);
+    list-style-type: decimal !important;
+    display: list-item;
     overflow: hidden;
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;

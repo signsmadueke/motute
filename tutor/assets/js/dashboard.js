@@ -65,23 +65,23 @@ const ps = new
 $( function() {
     $( "#chapters" ).sortable({
     	  handle: ".chapter-move",
-    	  axis: "y",
+    	  // axis: "y",
 		  revert: true
 		  // scroll: false,
 		  // cursor: "move"
     });
-    $( "#chapters" ).disableSelection();
+    // $( "#chapters" ).disableSelection();
  });
 
 $( function() {
     $( ".lessons" ).sortable({
 		handle: ".chapter-move",
-		axis: "y",
+		// axis: "y",
 		revert: true
 		// scroll: false,
 		// cursor: "move"
     });
-    $( ".lessons" ).disableSelection();
+    // $( ".lessons" ).disableSelection();
  });
 
 // $(document).ready(function () {
