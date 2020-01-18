@@ -124,12 +124,24 @@ let url_ajax_path = {
 };
 
 $(document).ready(function() {
+    function release_menu() {
+        // if ($sidebar.hasClass('hide')) {
+        //     $sidebar.toggleClass('hide');
+        //     $body.toggleClass('show');
+        // }
+        if ($('.side.create').width() === $(window).width()){
+	        $('.side.create').toggleClass("hide");
+	    	$('.body.create').toggleClass("show");
+		}
+    }
+
 	/*--------------- CHAPTERS START --------------- */
 	$(".add-chapter").click(function(e) {
 		e.preventDefault();
 		$.get(url_ajax_path.add_chapter, function(data) {
 			$("#body-container").empty();
 			$("#body-container").html(data);
+			release_menu();
 		});
 	});
 
@@ -138,6 +150,7 @@ $(document).ready(function() {
 		$.get(url_ajax_path.edit_chapter, function(data) {
 			$("#body-container").empty();
 			$("#body-container").html(data);
+			release_menu();
 		});
 	});
 	/*--------------- CHAPTERS END --------------- */
@@ -148,6 +161,7 @@ $(document).ready(function() {
 		$.get(url_ajax_path.add_lesson_video, function(data) {
 			$("#body-container").empty();
 			$("#body-container").html(data);
+			release_menu();
 		});
 	});
 
@@ -156,6 +170,7 @@ $(document).ready(function() {
 		$.get(url_ajax_path.add_lesson_text, function(data) {
 			$("#body-container").empty();
 			$("#body-container").html(data);
+			release_menu();
 		});
 	});
 
@@ -164,6 +179,7 @@ $(document).ready(function() {
 		$.get(url_ajax_path.add_lesson_audio, function(data) {
 			$("#body-container").empty();
 			$("#body-container").html(data);
+			release_menu();
 		});
 	});
 
@@ -172,6 +188,7 @@ $(document).ready(function() {
 		$.get(url_ajax_path.add_lesson_download, function(data) {
 			$("#body-container").empty();
 			$("#body-container").html(data);
+			release_menu();
 		});
 	});
 
@@ -180,6 +197,7 @@ $(document).ready(function() {
 		$.get(url_ajax_path.add_lesson_exam, function(data) {
 			$("#body-container").empty();
 			$("#body-container").html(data);
+			release_menu();
 		});
 	});
 	/*--------------- LESSONS ADD END --------------- */
@@ -190,6 +208,7 @@ $(document).ready(function() {
 		$.get(url_ajax_path.edit_lesson_video, function(data) {
 			$("#body-container").empty();
 			$("#body-container").html(data);
+			release_menu();
 		});
 	});
 
@@ -198,6 +217,7 @@ $(document).ready(function() {
 		$.get(url_ajax_path.edit_lesson_text, function(data) {
 			$("#body-container").empty();
 			$("#body-container").html(data);
+			release_menu();
 		});
 	});
 
@@ -206,6 +226,7 @@ $(document).ready(function() {
 		$.get(url_ajax_path.edit_lesson_audio, function(data) {
 			$("#body-container").empty();
 			$("#body-container").html(data);
+			release_menu();
 		});
 	});
 
@@ -214,6 +235,7 @@ $(document).ready(function() {
 		$.get(url_ajax_path.edit_lesson_download, function(data) {
 			$("#body-container").empty();
 			$("#body-container").html(data);
+			release_menu();
 		});
 	});
 
@@ -222,6 +244,7 @@ $(document).ready(function() {
 		$.get(url_ajax_path.edit_lesson_exam, function(data) {
 			$("#body-container").empty();
 			$("#body-container").html(data);
+			release_menu();
 		});
 	});
 	/*--------------- LESSONS EDIT END --------------- */
