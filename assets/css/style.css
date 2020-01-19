@@ -9,24 +9,7 @@
     color: var(--background-gray) !important;
 }
 
-/* width */
-::-webkit-scrollbar {
-    width: 10px;
-    margin-left: 0px;
-    height: 10px;
-}
 
-/* Track */
-::-webkit-scrollbar-track {
-    background: rgba(42, 42, 42, 0.15);
-    /* border-radius: 3px; */
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: rgba(42, 42, 42, 0.5) !important;
-    /* border-radius: 3px; */
-}
 
 /*Responsiveness*/
 @media (max-width: 768px) {}

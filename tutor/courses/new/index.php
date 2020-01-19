@@ -64,7 +64,7 @@ $title = 'Add New Course';
                 <div class="bg"></div>
             </div>
         </nav>
-        <div class="side create">
+        <div class="d-flex side create">
             <ul id="chapters" class="nav" data-children=".chapter">
                 <div class="chapter">
                     <div class="chapter-title">
@@ -233,20 +233,18 @@ $title = 'Add New Course';
             </div>
         </div>
         <div class="body create">
-            <div class="col-12 no-gutters">
-                <div id="body-container">
-                    <?php //include 'add/chapter.php'; ?>
-                    <?php include 'edit/chapter.php'; ?>
-                    <footer id="footer" class="create">
-                        <div class="row no-gutters">
-                            <div class="col-auto mr-auto"><p>Copyright © 2019 <a href="#">Motute, Inc.</a></p></div>
-                            <div class="col-auto ml-auto d-flex">
-                                <a href="#" class="mr-20">Privacy</a>
-                                <a href="#">Terms</a>
-                            </div>
+            <div id="body-container">
+                <?php //include 'add/chapter.php'; ?>
+                <?php include 'edit/chapter.php'; ?>
+                <footer id="footer" class="create">
+                    <div class="row no-gutters">
+                        <div class="col-auto mr-auto"><p>Copyright © 2019 <a href="#">Motute, Inc.</a></p></div>
+                        <div class="col-auto ml-auto d-flex">
+                            <a href="#" class="mr-20">Privacy</a>
+                            <a href="#">Terms</a>
                         </div>
-                    </footer>
-                </div>
+                    </div>
+                </footer>
             </div>
         </div>
     </div>

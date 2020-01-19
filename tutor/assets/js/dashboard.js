@@ -11,16 +11,16 @@ $(".menu").click(function () {
 });
 
 $('#main .body.create').css({
-    'padding-top': $('#nav').height() + "px"
+    'height': "calc(100vh - " + $('#nav').height() + "px)"
 });
 
 $('#main .side.create').css({
-    'padding-top': $('#nav').height() + "px"
+    'height': "calc(100vh - " + $('#nav').height() + "px)"
 });
 
-$('#main .side.create #chapters').css({
-    'padding-bottom': $('.chapter-actions').height() + 60 + "px"
-});
+// $('#main .side.create #chapters').css({
+//     'padding-bottom': $('.chapter-actions').height() + 40 + "px"
+// });
 
 // const ps1 = new
 // 	PerfectScrollbar('.scrollbar', {
@@ -65,23 +65,23 @@ $('#main .side.create #chapters').css({
 $( function() {
     $( "#chapters" ).sortable({
     	  handle: ".chapter-move",
-    	  // axis: "y",
+    	  axis: "y",
 		  revert: true
 		  // scroll: false,
 		  // cursor: "move"
     });
-    // $( "#chapters" ).disableSelection();
+    $( "#chapters" ).disableSelection();
  });
 
 $( function() {
     $( ".lessons" ).sortable({
 		handle: ".chapter-move",
-		// axis: "y",
+		axis: "y",
 		revert: true
 		// scroll: false,
 		// cursor: "move"
     });
-    // $( ".lessons" ).disableSelection();
+    $( ".lessons" ).disableSelection();
  });
 
 // $(document).ready(function () {
