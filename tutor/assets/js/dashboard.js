@@ -19,7 +19,7 @@ $('#main .side.create').css({
 });
 
 $('#main .side.create #chapters').css({
-    'padding-bottom': $('.chapter-actions').height() + 40 + "px"
+    'padding-bottom': $('.chapter-actions').height() + 60 + "px"
 });
 
 // const ps1 = new
@@ -29,12 +29,12 @@ $('#main .side.create #chapters').css({
 // 	minScrollbarLength: 20
 // });
 
-const ps = new
-	PerfectScrollbar('#chapters', {
-	wheelSpeed: 2,
-	wheelPropagation: true,
-	minScrollbarLength: 20
-});
+// const ps = new
+// 	PerfectScrollbar('#chapters', {
+// 	wheelSpeed: 2,
+// 	wheelPropagation: true,
+// 	minScrollbarLength: 20
+// });
 
 // const ps = new
 // 	PerfectScrollbar('#chapters', {
