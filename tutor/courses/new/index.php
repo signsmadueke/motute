@@ -64,7 +64,7 @@ $title = 'Add New Course';
                 <div class="bg"></div>
             </div>
         </nav>
-        <div class="d-flex side create">
+        <div class="side create">
             <ul id="chapters" class="nav" data-children=".chapter">
                 <div class="chapter">
                     <div class="chapter-title">
@@ -248,7 +248,17 @@ $title = 'Add New Course';
             </div>
         </div>
     </div>
-    <?php require_once '../../inc/scripts.php'; ?>
+    <div class="modal-container"></div>
+    <script src="../../../assets/js/popper.js"></script>
+    <script src="../../../assets/js/jquery.js"></script>
+    <script src="../../../assets/js/bootstrap.min.js"></script>
+    <script src="../../../assets/js/jquery-ui.js"></script>
+    <script src="../../../assets/js/owl.carousel.js"></script>
+    <script src="../../../assets/js/custom.js"></script>
+    <script src="../../../assets/js/tippy.js"></script>
+    <script src="../../../assets/js/perfect-scrollbar.js"></script>
+    <script src="../../../assets/js/dropzone.js"></script>
+    <script src="../../assets/js/dashboard.js"></script>
     
 </body>
 

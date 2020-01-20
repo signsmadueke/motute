@@ -1,17 +1,15 @@
 #nav.main {
-    background: #ffffff;
-    position: fixed;
-    padding: 24px 100px;
-    -webkit-box-shadow: 0px 2px 4px rgba(194, 194, 194, 0.12);
-       -moz-box-shadow: 0px 2px 4px rgba(194, 194, 194, 0.12);
-            box-shadow: 0px 2px 4px rgba(194, 194, 194, 0.12);
+    background: none;
+    position: relative;
+    padding: 20px 30px !important;
+    border: 1px solid var(--background-gray);
+    box-shadow: none;
     left: 0;
     z-index: 5;
 }
 
 #nav.main.proto {
-    position: fixed !important;
-    padding-top: 24px !important;
+    position: relative !important;
 }
 
 .account {
@@ -86,8 +84,7 @@
 
 #body {
     padding-left: 70px;
-    padding-bottom: 100px;
-    background: #FAFAFA;
+    padding-bottom: 0px;
     -webkit-transition: all .3s cubic-bezier(0.77, 0, 0.175, 1) 0s;
     -o-transition: all .3s cubic-bezier(0.77, 0, 0.175, 1) 0s;
     -moz-transition: all .3s cubic-bezier(0.77, 0, 0.175, 1) 0s;
@@ -136,8 +133,8 @@
 
 #body #main {
     padding-left: 30px;
-    padding-right: 100px;
-    padding-top: 150px;
+    padding-right: 30px;
+    padding-top: 30px;
     padding-bottom: 100px;
     min-height: 100vh;
     z-index: 3;
@@ -145,18 +142,18 @@
 
 
 #sidebar #logo {
-    padding: 30px 0;
-    max-height: 100px;
-    width: 150px;
-    margin: 0px auto 0 20px;
+    padding: 40px 22.5px;
+    height: 120px;
+    width: 100%;
+    margin: 0px auto 0 0px;
 }
 
 #sidebar.hide #logo {
-    padding: 33px 0px;
-    height: 100px;
-    max-height: 100px;
-    width: 40px;
-    margin: 0 20px;
+    padding: 43px 22px;
+    /* height: 100px; */
+    /* max-height: 100px; */
+    /* width: 40px; */
+    margin: 0 0px;
 }
 
 #sidebar #logo .logo {
@@ -165,12 +162,14 @@
     -webkit-transition: all .3s cubic-bezier(0.77, 0, 0.175, 1) 0s;
     -o-transition: all .3s cubic-bezier(0.77, 0, 0.175, 1) 0s;
     -moz-transition: all .3s cubic-bezier(0.77, 0, 0.175, 1) 0s;
-    transition: all .3s cubic-bezier(0.77, 0, 0.175, 1) 0s;
+    transition: all .3s cubic-bezier(0.77, 0, 0.175, 1) 4s;
+    margin: auto;
 }
 
 #sidebar.hide #logo .logo {
     height: 100px;
     content: url("../images/favicon.svg");
+    transition: all .3s cubic-bezier(0.77, 0, 0.175, 1) 4s;
 }
 
 #sidebar .nav {
@@ -354,21 +353,85 @@
 
 .course.tutor-courses .course-img {
     height: 200px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .course.tutor-courses .name {
-    padding: 0 30px 30px 30px;
+    padding: 0 20px 20px 20px;
 }
 
 .course.tutor-courses .item-details {
-    padding: 15px 30px;
+    padding: 15px 20px;
 }
 
 .course.tutor-courses:before {
     content: none;
 }
 
+
+/* Modal */
+.modal-open .modal {
+    padding: 0 !important;
+    margin: auto 30px !important;
+}
+#create-course.modal .modal-dialog {
+    max-width: 1000px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: auto !important;
+}
+
+#create-course.modal .modal-dialog .modal-content {
+    background-color: white;
+}
+
+#create-course.modal .modal-dialog .close {
+    background-color: var(--brand-primary);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+#create-course.modal .modal-dialog .close svg {
+    width: 15px;
+    height: 15px;
+}
+
+#create-course.modal .modal-dialog .close svg path {
+    fill: var(--brand-white);
+}
+
+#create-course.modal .create-course-bg {
+background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(../../../assets/images/heros/create-course-bg.jpg);
+background-position: center center;
+background-size: cover;
+}
+
+#create-course.modal .create-course-form {
+    padding: 50px 30px;
+    margin-left: auto;
+}
+
+#create-course.modal .create-course-form textarea {
+    
+height: 150px;
+    
+resize: none;
+}
+
+.modal-open {
+    padding-right: 0 !important;
+}
+
+.modal-backdrop.show {
+    opacity: 0.7;
+}
+
+/* Modal */
 
 /*progressbar*/
 #progressbar {
@@ -568,8 +631,10 @@ body.create {
 }
 
 #main.create {
-    height: 100vh;
-    max-height: 100vh;
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+    overflow: hidden;
     background: #eeeeee;
     display: block;
     position: fixed;
@@ -592,7 +657,7 @@ body.create {
     -moz-transition: all .5s cubic-bezier(1, 0, 0, 1) 0s;
     transition: all .5s cubic-bezier(1, 0, 0, 1) 0s;
     position: fixed;
-    display: flex;
+    display: block;
     /* bottom: 0; */
     /* left: 0; */
 }
@@ -608,8 +673,9 @@ body.create {
     -ms-transform: translate(400px, 0px);
     -o-transform: translate(400px, 0px);
     transform: translate(400px, 0px);
+    padding: 20px;
     overflow-y: auto;
-    overflow-x: auto;
+    overflow-x: hidden;
     -webkit-transition: all .5s cubic-bezier(1, 0, 0, 1) 0s;
     -o-transition: all .5s cubic-bezier(1, 0, 0, 1) 0s;
     -moz-transition: all .5s cubic-bezier(1, 0, 0, 1) 0s;
@@ -621,18 +687,19 @@ body.create {
     display: flex;
 }
 
-#footer.create {
+#footer {
     margin-left: 0;
     bottom: 0;
     /* position: absolute; */
     width: 100%;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     padding: 20px;
+    padding-left: 100px;
     height: auto;
 }
 
-#footer.create p,
-#footer.create a {
+#footer p,
+#footer a {
     font-family: Soleil;
     font-style: normal;
     font-weight: normal;
@@ -643,11 +710,8 @@ body.create {
 }
 
 #main .body.create #body-container {
-    /* height: -webkit-calc(100%); */
-    height: -moz-calc(100%);
-    /* height: 100%; */
+    height: 100%;
     width: 100%;
-    padding: 20px;
     -webkit-transition: all .5s cubic-bezier(1, 0, 0, 1) 0s;
     -o-transition: all .5s cubic-bezier(1, 0, 0, 1) 0s;
     -moz-transition: all .5s cubic-bezier(1, 0, 0, 1) 0s;
@@ -698,6 +762,7 @@ body.create {
     width: 100%;
     max-width: 1000px;
     margin: 0px auto !important;
+    padding: 20px;
 }
 
 /*------------------------------*/
@@ -710,7 +775,7 @@ body.create {
     overflow: hidden auto;
     display: list-item;
     padding: 20px;
-    padding-bottom: 103px;
+    /* padding-bottom: 103px; */
     -webkit-transition: all .3s ease-in-out 0s;
     -o-transition: all .3s ease-in-out 0s;
     -moz-transition: all .3s ease-in-out 0s;
@@ -808,7 +873,7 @@ body.create {
 
 .chapter-actions {
     bottom: 0;
-    position: fixed;
+    position: sticky;
     width: 400px;
     background-color: var(--background-gray);
     border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -1105,12 +1170,10 @@ body.create {
 /*Responsiveness*/
 @media (max-width: 768px) {
     #nav.main {
-        padding: 24px 30px;
-        padding-left: 100px;
     }
 
     #body #main {
-        padding-top: 200px;
+        padding-top: 30px;
     }
 
     #body #main.create {

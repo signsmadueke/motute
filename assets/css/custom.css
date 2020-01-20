@@ -120,6 +120,7 @@ body {
     letter-spacing: -0.4px;
     color: var(--text-body);
     transition: all .3s ease-in-out 0s;
+    background-color: #FAFAFA;
 }
 
 .text-body {
