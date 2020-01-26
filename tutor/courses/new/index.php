@@ -35,6 +35,7 @@ $title = 'Add New Course';
     <link rel="stylesheet" href="../../../assets/css/perfect-scrollbar.css">
     <link rel="stylesheet" href="../../../assets/css/animate.css">
     <link rel="stylesheet" href="../../assets/css/dashboard.css">
+    <link rel="stylesheet" href="new.css">
 
 </head>
 
@@ -228,9 +229,9 @@ $title = 'Add New Course';
                     </a>
                 </div>
             </ul>
-            <div class="chapter-actions">
-                <a class="add-chapter btn btn-block btn-primary-sm" href="#">Add Chapter</a>
-            </div>
+        </div>
+        <div class="chapter-actions">
+            <a class="add-chapter btn btn-block btn-primary-sm" href="#">Add Chapter</a>
         </div>
         <div class="body create">
             <div id="body-container">

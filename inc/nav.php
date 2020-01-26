@@ -5,7 +5,7 @@
                 <div class="col-auto navbar-brand pl-0">
                     <div id="logo">
                         <a href="index.php">
-                            <img src="assets/images/logo.png" class="svg logo" alt="Logo">
+                            <img src="assets/images/logo.svg" class="svg logo" alt="Logo">
                         </a>
                     </div>
                 </div>

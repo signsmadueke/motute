@@ -1,13 +1,26 @@
-$("#body #sidebar").hover(function () {
+$("#menu").click(function () {
+    var $body = $('body');
     var $sidebar = $('#sidebar');
+    var $menu = $('#menu');
     $sidebar.toggleClass("hide");
+    $body.toggleClass("modal-open");
 });
 
 $(".menu").click(function () {
     var $sidebar = $('.side.create');
     var $body = $('.body.create');
+    var $chapteractions = $('.chapter-actions');
     $sidebar.toggleClass("hide");
+    $chapteractions.toggleClass("hide");
     $body.toggleClass("show");
+});
+
+$(".sidebar-overlay").click(function () {
+    var $body = $('body');
+    var $sidebar = $('#sidebar');
+    var $menu = $('#menu');
+    $sidebar.toggleClass("hide");
+    $body.toggleClass("modal-open");
 });
 
 $('#main .body.create').css({
@@ -15,7 +28,14 @@ $('#main .body.create').css({
 });
 
 $('#main .side.create').css({
-    'height': "calc(100vh - " + $('#nav').height() + "px)"
+    'height': "calc(100vh - " + $('#nav').height() + "px)",
+    'padding-bottom': $('.chapter-actions').height() + 41 + "px"
+});
+
+
+$(".sidebar-overlay").click(function () {
+	var $module = $('.course .name h2');
+	$clamp($module, {clamp: 1});
 });
 
 // $('#main .side.create #chapters').css({

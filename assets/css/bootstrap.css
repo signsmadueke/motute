@@ -50,6 +50,7 @@ header,
 footer {
     position: relative;
     z-index: 1;
+    /* overflow-y: hidden; */
 }
 
 #wrap {
@@ -2818,9 +2819,15 @@ btn-outline-info:active,
 /*------------------ DANGER ----------------*/
 
 .btn-danger {
-    color: var(--text-body) !important;
+    color: var(--support-error) !important;
     background-color: #ffffff !important;
-    border-color: var(--background-gray) !important;
+    border-color: rgba(189, 33, 48, 0.2) !important;
+    line-height: 0;
+}
+
+.btn-danger svg path
+ {
+    fill: var(--support-error) !important;
 }
 
 .btn-danger:hover,
@@ -2828,8 +2835,8 @@ btn-outline-info:active,
 .btn-danger.active,
 .show > .btn-danger.dropdown-toggle {
     color: #bd2130 !important;
-    background-color: rgba(189, 33, 48, 0.05) !important;
-    border-color: rgba(189, 33, 48, 0.08) !important;
+    background-color: rgba(189, 33, 48, 0.08) !important;
+    border-color: rgba(189, 33, 48, 0.3) !important;
 }
 
 .btn-outline-danger {
@@ -9956,7 +9963,7 @@ p.chart-line {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
-    content: "ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Ãƒâ€šÃ‚Â±";
+    content: "ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â±";
 }
 
 .nav-link.dropdown-toggle.dropdown-toggle-split:after,
@@ -9981,7 +9988,7 @@ p.chart-line {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
-    content: "ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Ãƒâ€šÃ‚Â³";
+    content: "ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â³";
 }
 
 .btn-group.dropright .nav-link.dropdown-toggle:before,
@@ -10002,7 +10009,7 @@ p.chart-line {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
-    content: "ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Ãƒâ€šÃ‚Â©";
+    content: "ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©";
 }
 
 .btn-group.dropleft .nav-link.dropdown-toggle:before,
@@ -10023,7 +10030,7 @@ p.chart-line {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
-    content: "ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Ãƒâ€šÃ‚Â²";
+    content: "ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â²";
 }
 
 @-webkit-keyframes dropdown-menu-fade-in {

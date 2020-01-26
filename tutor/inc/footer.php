@@ -1,13 +1,4 @@
 </section>
-<footer id="footer">
-    <div class="row no-gutters">
-        <div class="col-md-auto mr-auto col-sm-12 mb-md-0 mb-sm-10"><p>Copyright © 2019 <a href="#">Motute, Inc.</a></p></div>
-        <div class="col-md-auto ml-auto d-flex col-sm-12">
-            <a href="#" class="mr-20">Privacy</a>
-            <a href="#">Terms</a>
-        </div>
-    </div>
-</footer>
 <div class="modal-container">
     <div class="modal fade" id="create-course" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">

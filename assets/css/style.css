@@ -768,6 +768,12 @@
     src: url("../fonts/Soleil/Soleil-Regular.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: ProximaNova;
+    font-weight: normal;
+    src: url("../fonts/Proxima-Nova/Proxima-Nova-Alt-Bold.otf") format("opentype");
+}
+
 
 /* 11. Icon Fonts */
 @font-face {
@@ -959,7 +965,7 @@ form .form-group .pre-icon {
 }
 
 #hero h2 {
-    font-family: 'CircularStdBold';
+    font-family: 'ProximaNova';
     line-height: normal !important;
     color: var(--brand-black);
 }
@@ -1117,7 +1123,7 @@ form .form-group .pre-icon {
 }
 
 .course:hover {
-    box-shadow: 0px 20px 20px -10px rgba(0, 0, 0, .07);
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1) !important;
     transform: translateY(-5px);
 }
 
@@ -1164,7 +1170,7 @@ form .form-group .pre-icon {
 }
 
 .course .name h2 {
-    font-family: Soleil;
+    font-family: CircularStd;
     font-style: normal;
     font-weight: lighter;
     font-size: 17px !important;
@@ -1187,7 +1193,7 @@ form .form-group .pre-icon {
 }
 
 .course .item-details p {
-    font-family: Soleil;
+    font-family: CircularStd;
     font-size: 17px;
     color: var(--text-heading);
     line-height: normal;
@@ -1622,6 +1628,9 @@ input[type="file"]#change-dp {
     float: none;
     white-space: nowrap;
     display: block;
+    padding: 0 10px 0 15px;
+    margin-bottom: 10px;
+    /* justify-self: stretch; */
 }
 
 .horizontal.nav .nav-link:before {
@@ -1633,6 +1642,7 @@ input[type="file"]#change-dp {
     left: 0;
     border-radius: 0px 5px 5px 0;
     top: 0;
+    transition: all .3s ease-in-out 0s;
 }
 
 .horizontal.nav .active:before {
@@ -1645,6 +1655,7 @@ input[type="file"]#change-dp {
     border-radius: 0;
     top: 0;
     transition: all .3s ease-in-out 0s;
+    border-radius: 0 5px 5px 0;
 }
 
 .horizontal.nav .nav-link {
@@ -1725,7 +1736,7 @@ input[type="file"]#change-dp {
 
 
 .cart .sub-menu table thead th {
-    font-family: Soleil;
+    font-family: CircularStd;
     font-style: normal;
     font-weight: normal;
     font-size: 17px;
@@ -1753,7 +1764,7 @@ input[type="file"]#change-dp {
     text-align: right;
     font-size: 22px;
     line-height: 35px;
-    font-family: Soleil;
+    font-family: CircularStd;
     font-style: normal;
     font-weight: normal;
     color: var(--text-heading);

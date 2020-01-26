@@ -3,7 +3,7 @@
 
 <head>
     <title><?php echo $title; ?> — Motute</title>
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="../../favicon.ico">
     <meta name="theme-color" content="#FB840D">
     
     <meta charset="UTF-8">

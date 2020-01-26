@@ -112,19 +112,19 @@ a {
 }
 
 body {
-    font-family: Soleil;
+    font-family: CircularStd;
     font-size: 17px;
     line-height: 25px;
-    font-weight: 100;
+    font-weight: normal;
     font-style: normal;
     letter-spacing: -0.4px;
     color: var(--text-body);
     transition: all .3s ease-in-out 0s;
-    background-color: #FAFAFA;
+    background-color: var(--background-offwhite);
 }
 
 .text-body {
-    font-family: Soleil;
+    font-family: CircularStd;
     font-size: 17px;
     line-height: 22px;
     font-weight: normal;
@@ -133,7 +133,7 @@ body {
 }
 
 .text-body-lg {
-    font-family: Soleil;
+    font-family: CircularStd;
     font-size: 22px;
     line-height: 35px;
     font-style: normal;
@@ -146,7 +146,7 @@ body {
 }
 
 .bigtext {
-    font-family: Soleil;
+    font-family: CircularStd;
     font-size: 70px;
     color: var(--text-heading);
     line-height: normal;
@@ -155,7 +155,7 @@ body {
 }
 
 .spaced-text {
-    font-family: Soleil;
+    font-family: CircularStd;
     font-style: normal;
     font-weight: bold;
     font-size: 11px;
@@ -182,7 +182,7 @@ h6,
 
 h1,
 .h1 {
-    font-family: CircularstdBold;
+    font-family: ProximaNova;
     font-size: 45px;
     color: var(--text-heading);
     line-height: normal;
@@ -192,7 +192,7 @@ h1,
 
 h2,
 .h2 {
-    font-family: CircularstdBold;
+    font-family: ProximaNova;
     font-size: 40px;
     color: var(--text-heading);
     line-height: normal;
@@ -202,7 +202,7 @@ h2,
 
 h3,
 .h3 {
-    font-family: CircularstdBold;
+    font-family: ProximaNova;
     font-size: 35px;
     color: var(--text-heading);
     line-height: normal;
@@ -212,7 +212,7 @@ h3,
 
 h4,
 .h4 {
-    font-family: CircularstdBold;
+    font-family: ProximaNova;
     font-size: 30px;
     color: var(--text-heading);
     line-height: normal;
@@ -222,7 +222,7 @@ h4,
 
 h5,
 .h5 {
-    font-family: CircularstdBold;
+    font-family: ProximaNova;
     font-size: 25px;
     color: var(--text-heading);
     line-height: normal;
@@ -287,7 +287,7 @@ h6,
     }
 
     .text-body {
-        font-family: Soleil;
+        font-family: CircularStd;
         font-size: 14px;
         color: var(--text-body);
         line-height: 18px;
@@ -382,7 +382,7 @@ h6,
 -----------------------------------------------------------------------------------------*/
 
 .btn {
-    font-family: Soleil;
+    font-family: CircularStd;
     font-style: normal;
     font-size: 17px;
     font-weight: normal;
@@ -490,11 +490,19 @@ h6,
     width: 100%;
 }
 
-.btn:focus,
+.btn:focus {
+    text-decoration: none;
+}
+
+.btn:active {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
 .btn:hover {
     text-decoration: none;
-    -webkit-transform: translateY(-3px);
-    transform: translateY(3px);
+    color: white;
+    opacity: 0.7;
 }
 
 .btn.disabled,
@@ -642,7 +650,7 @@ h6,
     border-radius: 0 0 10px 10px;
     border-top: 1px solid rgba(0, 0, 0, 0.1) !important;
     padding: 20px 25px;
-    font-family: Soleil;
+    font-family: CircularStd;
     font-style: normal;
     font-weight: bold;
     font-size: 11px;
@@ -717,7 +725,7 @@ h6,
     border: 1px solid rgba(0, 0, 0, 0.1) !important;
     border-radius: 5px;
     padding: 15px 25px;
-    font-family: Soleil;
+    font-family: CircularStd;
     font-style: normal;
     font-weight: bold;
     font-size: 11px;
@@ -787,7 +795,7 @@ h6,
     border: 1px solid rgba(0, 0, 0, 0.1) !important;
     border-radius: 5px;
     padding: 15px 25px;
-    font-family: Soleil;
+    font-family: CircularStd;
     font-style: normal;
     font-weight: bold;
     font-size: 11px;
@@ -900,7 +908,7 @@ h6,
     border: 1px solid var(--brand-primary) !important;
     border-radius: 5px;
     padding: 15px 25px;
-    font-family: Soleil;
+    font-family: CircularStd;
     font-style: normal;
     font-weight: bold;
     font-size: 11px;
@@ -914,14 +922,6 @@ h6,
     color: var(--brand-white) !important;
     background-color: var(--brand-primary-dark) !important;
     border: 1px solid var(--brand-primary-dark) !important;
-}
-
-.btn-primary-sm:active,
-.btn-primary-sm.active {
-    color: var(--brand-white) !important;
-    background-color: var(--brand-primary-dark) !important;
-    border: 1px solid var(--brand-primary-dark) !important;
-    transform: scale(0.98);
 }
 
 .btn-primary-sm .svg path,
@@ -974,11 +974,12 @@ h6,
     overflow-x: auto;
     margin-right: 0;
     margin-left: 0;
-    display: inline-flex;
+    display: grid;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     /* text-align: center; */
     border-bottom: 1px solid var(--background-gray);
+    flex-basis:;
 }
 
 .tabs .tab {
@@ -995,13 +996,18 @@ h6,
     transition: all .3s ease-out 0s;
     /* text-align: center; */
     /* padding: 0px 5px; */
+    grid-row: none;
+    text-align: center;
+    margin: auto 15px;
 }
 
 .tabs .tab a {
     font-size: 14px;
-    font-family: CircularstdBold;
+    font-family: CircularStd;
     text-transform: uppercase;
     line-height: 16px;
+    letter-spacing: 1px;
+    font-weight: bold;
     /* width: 100%; */
     border-radius: 0;
     cursor: pointer;
@@ -1022,6 +1028,8 @@ h6,
     user-select: none;
     vertical-align: middle;
     /* border-right: 1px solid black; */
+    width: 100%;
+    justify-content: center;
 }
 
 .tabs .tab a span {
@@ -1073,7 +1081,7 @@ h6,
     color: var(--text-body) !important;
     opacity: 0.5 !important;
     background-color: transparent !important;
-    border-bottom: 2px solid !important;
+    border-bottom: 3px solid !important;
     border-color: transparent !important;
 }
 
@@ -1108,7 +1116,7 @@ h6,
 -----------------------------------------------------------------------------------------*/
 
 .alert {
-    font-family: Soleil;
+    font-family: CircularStd;
     font-size: 14px;
     line-height: 24px;
     /*font-weight: ;*/
@@ -1459,7 +1467,7 @@ h6,
 /*------------------ INPUT FORMS ----------------*/
 
 .form-control {
-    font-family: Soleil;
+    font-family: CircularStd;
     /* letter-spacing: -1px; */
     display: block;
     width: 100%;
@@ -1524,7 +1532,7 @@ h6,
 }
 
 .invalid-feedback {
-    font-family: Soleil;
+    font-family: CircularStd;
     font-size: 14px;
     line-height: 24px;
     position: relative;
@@ -1568,7 +1576,7 @@ h6,
     /*background-color: #ffffff;*/
 }
 
-.main svg path.text {
+#logo.light svg path.text {
     fill: white;
     transition: 1s fill 0s;
 }
@@ -1582,9 +1590,9 @@ h6,
     position: absolute;
     width: 100%;
     border-bottom: 1px solid var(--background-gray);
-    /* box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05); */
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
     transition: all ease-in 0.3s;
-    /* background-color: var(--brand-white); */
+    background-color: var(--brand-white);
     /* opacity: 0; */
     /* visibility: hidden; */
 }
@@ -1614,7 +1622,7 @@ body.nav-active .post-progress {
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
     padding: 0px 0;
     padding-top: 0px !important;
-    /* position: fixed !important; */
+    position: fixed !important;
     border-bottom: 1px var(--brand-white) !important;
     /* opacity: 1; */
     /* visibility: visible; */
@@ -1846,7 +1854,7 @@ body.nav-active .post-progress {
 }
 
 .text-form {
-    font-family: Soleil;
+    font-family: CircularStd;
     font-size: 17px;
     line-height: 25px;
     border-color: var(--background-gray);

@@ -3,154 +3,249 @@ $title = 'Courses';
 $activenav = 'Courses';
 require_once '../inc/header.php';
 require_once '../inc/sidebar.php';
+require_once '../inc/nav.php';
 ?>
 
-<nav id="nav" class="main navbar">
-    <div class="w-100">
-        <div class="row align-items-center">
-            <div class="col-sm align-items-center">
-                <h1 class="mb-0 text-heading">Courses</h1>
-            </div>
-            <div class="col-lg-auto col-md-auto col-sm-12 text-right">
-                <a href="#" data-toggle="modal" data-target="#create-course" class="btn btn-block btn-primary-sm h-100 mt-md-0 mt-sm-10">Create Course</a>
-            </div>
-        </div>
-    </div>
-    <div class="bg-wrap">
-        <div class="bg"></div>
-    </div>
-</nav>
-<div id="main">
+<div id="main" class="">
     <div class="row">
-        <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="col-12">
+            <h1 class="page-title">Courses</h1>
+        </div>
+    </div>
+
+    <div class="row no-gutters">
+        <div class="col-12">
+            <div class="header-actions">
+                <div>
+                    <a class="btn btn-primary-sm" href="new/">Add Course</a>
+                </div>
+                <div>
+                    <form action="#" class="form-inline search w-100 align-items-center">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn btn-link dark"><img class="svg icon" alt="" src="../../assets/images/icons/outline-search-24px.svg"></button>
+                                </div>
+                                <input type="search" class="form-control" placeholder="Search Courses">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <ul class="nav tabs">
+                    <li class="tab tab-secondary">
+                        <a class="active" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true"><span>Active</span></a>
+                    </li>
+                    <li class="tab tab-secondary">
+                        <a class=""  data-toggle="tab" href="#account" role="tab" aria-controls="account" aria-selected="false"><span>Drafts</span></a>
+                    </li>
+                    <li class="tab tab-secondary">
+                        <a class=""  data-toggle="tab" href="#account" role="tab" aria-controls="account" aria-selected="false"><span>Archived</span></a>
+                    </li>                
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="row no-gutters">
+        <div class="col-lg-12">
             <div class="courses pb-50">
                 <div class="tutor-courses course">
-                    <div class="course-title d-block">
+                    <a href="#" class="course-img-link">
+                        <img class="course-img" src="../../assets/images/courses/1.jpg" alt="image">
+                    </a>
+                    <div class="course-details">
                         <a href="#">
-                            <img class="course-img" src="../../assets/images/courses/1.jpg" alt="image">
+                            <!-- <h2 class="mb-0">Become a UX Designer Learn the Skills & Get Designer Learn the Designer Learn.</h2> -->
+                            <h2>Become a UX Designer Learn the Skills & Get...</h2>
                         </a>
-                        <div class="name no-gutters row">
-                            <div class="col-12">
-                                <a href="#">
-                                    <h2 class="mb-0">Become a UX Designer Learn the Skills & Get Designer Learn the Designer Learn.</h2>
-                                </a>
-                            </div>
-                        </div>
+                        <p class="course-info"><img width="20px" src="../../assets/images/icons/graduate.svg" class="svg icon mr-10" alt="">36 Students</p>
+                        <p class="course-info"><img width="20px" src="../../assets/images/icons/certificate.svg" class="svg icon mr-10" alt="">3 Chapters, 30 Lessons</p>
+                        <p class="course-info"><img width="20px" src="../../assets/images/icons/tag.svg" class="svg icon mr-10" alt=""><a href="#">Technology</a>, <a href="#">Design</a></p>
                     </div>
-                    <div class="item-details d-block">
-                        <div class="align-items-center no-gutters row">
-                            <div class="col-md-auto mr-auto col-sm-12 mb-md-0 mb-sm-10">
-                                <a href="#">
-                                    <p class="text-body-sm"><img width="20px" src="../../assets/images/icons/sales.svg" class="svg icon mr-10" alt="">5 sales</p>
-                                </a>
-                            </div>
-                            <div class="col-md-auto ml-auto col-sm-12">
-                                <a href="#">
-                                    <p class="text-body-sm"><img width="20px" src="../../assets/images/icons/two-users.svg" class="svg icon mr-10" alt="">95 Students</p>
-                                </a>
-                            </div>
-                        </div>
+                </div>
+
+                <div class="tutor-courses course">
+                    <a href="#" class="course-img-link">
+                        <img class="course-img" src="../../assets/images/courses/1.jpg" alt="image">
+                    </a>
+                    <div class="course-details">
+                        <a href="#">
+                            <!-- <h2 class="mb-0">Become a UX Designer Learn the Skills & Get Designer Learn the Designer Learn.</h2> -->
+                            <h2>Become a UX Designer Learn the Skills & Get...</h2>
+                        </a>
+                        <p class="course-info"><img width="20px" src="../../assets/images/icons/graduate.svg" class="svg icon mr-10" alt="">36 Students</p>
+                        <p class="course-info"><img width="20px" src="../../assets/images/icons/certificate.svg" class="svg icon mr-10" alt="">3 Chapters, 30 Lessons</p>
+                        <p class="course-info"><img width="20px" src="../../assets/images/icons/tag.svg" class="svg icon mr-10" alt=""><a href="#">Technology</a>, <a href="#">Design</a></p>
+                    </div>
+                </div>
+
+                <div class="tutor-courses course">
+                    <a href="#" class="course-img-link">
+                        <img class="course-img" src="../../assets/images/courses/1.jpg" alt="image">
+                    </a>
+                    <div class="course-details">
+                        <a href="#">
+                            <!-- <h2 class="mb-0">Become a UX Designer Learn the Skills & Get Designer Learn the Designer Learn.</h2> -->
+                            <h2>Become a UX Designer Learn the Skills & Get...</h2>
+                        </a>
+                        <p class="course-info"><img width="20px" src="../../assets/images/icons/graduate.svg" class="svg icon mr-10" alt="">36 Students</p>
+                        <p class="course-info"><img width="20px" src="../../assets/images/icons/certificate.svg" class="svg icon mr-10" alt="">3 Chapters, 30 Lessons</p>
+                        <p class="course-info"><img width="20px" src="../../assets/images/icons/tag.svg" class="svg icon mr-10" alt=""><a href="#">Technology</a>, <a href="#">Design</a></p>
+                    </div>
+                </div>
+
+                <div class="tutor-courses course">
+                    <a href="#" class="course-img-link">
+                        <img class="course-img" src="../../assets/images/courses/1.jpg" alt="image">
+                    </a>
+                    <div class="course-details">
+                        <a href="#">
+                            <!-- <h2 class="mb-0">Become a UX Designer Learn the Skills & Get Designer Learn the Designer Learn.</h2> -->
+                            <h2>Become a UX Designer Learn the Skills & Get...</h2>
+                        </a>
+                        <p class="course-info"><img width="20px" src="../../assets/images/icons/graduate.svg" class="svg icon mr-10" alt="">36 Students</p>
+                        <p class="course-info"><img width="20px" src="../../assets/images/icons/certificate.svg" class="svg icon mr-10" alt="">3 Chapters, 30 Lessons</p>
+                        <p class="course-info"><img width="20px" src="../../assets/images/icons/tag.svg" class="svg icon mr-10" alt=""><a href="#">Technology</a>, <a href="#">Design</a></p>
+                    </div>
+                </div>
+
+                <div class="tutor-courses course">
+                    <a href="#" class="course-img-link">
+                        <img class="course-img" src="../../assets/images/courses/1.jpg" alt="image">
+                    </a>
+                    <div class="course-details">
+                        <a href="#">
+                            <!-- <h2 class="mb-0">Become a UX Designer Learn the Skills & Get Designer Learn the Designer Learn.</h2> -->
+                            <h2>Become a UX Designer Learn the Skills & Get...</h2>
+                        </a>
+                        <p class="course-info"><img width="20px" src="../../assets/images/icons/graduate.svg" class="svg icon mr-10" alt="">36 Students</p>
+                        <p class="course-info"><img width="20px" src="../../assets/images/icons/certificate.svg" class="svg icon mr-10" alt="">3 Chapters, 30 Lessons</p>
+                        <p class="course-info"><img width="20px" src="../../assets/images/icons/tag.svg" class="svg icon mr-10" alt=""><a href="#">Technology</a>, <a href="#">Design</a></p>
+                    </div>
+                </div>
+
+                <div class="tutor-courses course">
+                    <a href="#" class="course-img-link">
+                        <img class="course-img" src="../../assets/images/courses/1.jpg" alt="image">
+                    </a>
+                    <div class="course-details">
+                        <a href="#">
+                            <!-- <h2 class="mb-0">Become a UX Designer Learn the Skills & Get Designer Learn the Designer Learn.</h2> -->
+                            <h2>Become a UX Designer Learn the Skills & Get...</h2>
+                        </a>
+                        <p class="course-info"><img width="20px" src="../../assets/images/icons/graduate.svg" class="svg icon mr-10" alt="">36 Students</p>
+                        <p class="course-info"><img width="20px" src="../../assets/images/icons/certificate.svg" class="svg icon mr-10" alt="">3 Chapters, 30 Lessons</p>
+                        <p class="course-info"><img width="20px" src="../../assets/images/icons/tag.svg" class="svg icon mr-10" alt=""><a href="#">Technology</a>, <a href="#">Design</a></p>
+                    </div>
+                </div>
+
+                <div class="tutor-courses course">
+                    <a href="#" class="course-img-link">
+                        <img class="course-img" src="../../assets/images/courses/1.jpg" alt="image">
+                    </a>
+                    <div class="course-details">
+                        <a href="#">
+                            <!-- <h2 class="mb-0">Become a UX Designer Learn the Skills & Get Designer Learn the Designer Learn.</h2> -->
+                            <h2>Become a UX Designer Learn the Skills & Get...</h2>
+                        </a>
+                        <p class="course-info"><img width="20px" src="../../assets/images/icons/graduate.svg" class="svg icon mr-10" alt="">36 Students</p>
+                        <p class="course-info"><img width="20px" src="../../assets/images/icons/certificate.svg" class="svg icon mr-10" alt="">3 Chapters, 30 Lessons</p>
+                        <p class="course-info"><img width="20px" src="../../assets/images/icons/tag.svg" class="svg icon mr-10" alt=""><a href="#">Technology</a>, <a href="#">Design</a></p>
+                    </div>
+                </div>
+
+                <div class="tutor-courses course">
+                    <a href="#" class="course-img-link">
+                        <img class="course-img" src="../../assets/images/courses/1.jpg" alt="image">
+                    </a>
+                    <div class="course-details">
+                        <a href="#">
+                            <!-- <h2 class="mb-0">Become a UX Designer Learn the Skills & Get Designer Learn the Designer Learn.</h2> -->
+                            <h2>Become a UX Designer Learn the Skills & Get...</h2>
+                        </a>
+                        <p class="course-info"><img width="20px" src="../../assets/images/icons/graduate.svg" class="svg icon mr-10" alt="">36 Students</p>
+                        <p class="course-info"><img width="20px" src="../../assets/images/icons/certificate.svg" class="svg icon mr-10" alt="">3 Chapters, 30 Lessons</p>
+                        <p class="course-info"><img width="20px" src="../../assets/images/icons/tag.svg" class="svg icon mr-10" alt=""><a href="#">Technology</a>, <a href="#">Design</a></p>
+                    </div>
+                </div>
+
+                <div class="tutor-courses course">
+                    <a href="#" class="course-img-link">
+                        <img class="course-img" src="../../assets/images/courses/1.jpg" alt="image">
+                    </a>
+                    <div class="course-details">
+                        <a href="#">
+                            <!-- <h2 class="mb-0">Become a UX Designer Learn the Skills & Get Designer Learn the Designer Learn.</h2> -->
+                            <h2>Become a UX Designer Learn the Skills & Get...</h2>
+                        </a>
+                        <p class="course-info"><img width="20px" src="../../assets/images/icons/graduate.svg" class="svg icon mr-10" alt="">36 Students</p>
+                        <p class="course-info"><img width="20px" src="../../assets/images/icons/certificate.svg" class="svg icon mr-10" alt="">3 Chapters, 30 Lessons</p>
+                        <p class="course-info"><img width="20px" src="../../assets/images/icons/tag.svg" class="svg icon mr-10" alt=""><a href="#">Technology</a>, <a href="#">Design</a></p>
+                    </div>
+                </div>
+
+                <div class="tutor-courses course">
+                    <a href="#" class="course-img-link">
+                        <img class="course-img" src="../../assets/images/courses/1.jpg" alt="image">
+                    </a>
+                    <div class="course-details">
+                        <a href="#">
+                            <!-- <h2 class="mb-0">Become a UX Designer Learn the Skills & Get Designer Learn the Designer Learn.</h2> -->
+                            <h2>Become a UX Designer Learn the Skills & Get...</h2>
+                        </a>
+                        <p class="course-info"><img width="20px" src="../../assets/images/icons/graduate.svg" class="svg icon mr-10" alt="">36 Students</p>
+                        <p class="course-info"><img width="20px" src="../../assets/images/icons/certificate.svg" class="svg icon mr-10" alt="">3 Chapters, 30 Lessons</p>
+                        <p class="course-info"><img width="20px" src="../../assets/images/icons/tag.svg" class="svg icon mr-10" alt=""><a href="#">Technology</a>, <a href="#">Design</a></p>
+                    </div>
+                </div>
+
+                <div class="tutor-courses course">
+                    <a href="#" class="course-img-link">
+                        <img class="course-img" src="../../assets/images/courses/1.jpg" alt="image">
+                    </a>
+                    <div class="course-details">
+                        <a href="#">
+                            <!-- <h2 class="mb-0">Become a UX Designer Learn the Skills & Get Designer Learn the Designer Learn.</h2> -->
+                            <h2>Become a UX Designer Learn the Skills & Get...</h2>
+                        </a>
+                        <p class="course-info"><img width="20px" src="../../assets/images/icons/graduate.svg" class="svg icon mr-10" alt="">36 Students</p>
+                        <p class="course-info"><img width="20px" src="../../assets/images/icons/certificate.svg" class="svg icon mr-10" alt="">3 Chapters, 30 Lessons</p>
+                        <p class="course-info"><img width="20px" src="../../assets/images/icons/tag.svg" class="svg icon mr-10" alt=""><a href="#">Technology</a>, <a href="#">Design</a></p>
+                    </div>
+                </div>
+
+                <div class="tutor-courses course">
+                    <a href="#" class="course-img-link">
+                        <img class="course-img" src="../../assets/images/courses/1.jpg" alt="image">
+                    </a>
+                    <div class="course-details">
+                        <a href="#">
+                            <!-- <h2 class="mb-0">Become a UX Designer Learn the Skills & Get Designer Learn the Designer Learn.</h2> -->
+                            <h2>Become a UX Designer Learn the Skills & Get...</h2>
+                        </a>
+                        <p class="course-info"><img width="20px" src="../../assets/images/icons/graduate.svg" class="svg icon mr-10" alt="">36 Students</p>
+                        <p class="course-info"><img width="20px" src="../../assets/images/icons/certificate.svg" class="svg icon mr-10" alt="">3 Chapters, 30 Lessons</p>
+                        <p class="course-info"><img width="20px" src="../../assets/images/icons/tag.svg" class="svg icon mr-10" alt=""><a href="#">Technology</a>, <a href="#">Design</a></p>
+                    </div>
+                </div>
+
+                <div class="tutor-courses course">
+                    <a href="#" class="course-img-link">
+                        <img class="course-img" src="../../assets/images/courses/1.jpg" alt="image">
+                    </a>
+                    <div class="course-details">
+                        <a href="#">
+                            <!-- <h2 class="mb-0">Become a UX Designer Learn the Skills & Get Designer Learn the Designer Learn.</h2> -->
+                            <h2>Become a UX Designer Learn the Skills & Get...</h2>
+                        </a>
+                        <p class="course-info"><img width="20px" src="../../assets/images/icons/graduate.svg" class="svg icon mr-10" alt="">36 Students</p>
+                        <p class="course-info"><img width="20px" src="../../assets/images/icons/certificate.svg" class="svg icon mr-10" alt="">3 Chapters, 30 Lessons</p>
+                        <p class="course-info"><img width="20px" src="../../assets/images/icons/tag.svg" class="svg icon mr-10" alt=""><a href="#">Technology</a>, <a href="#">Design</a></p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="courses pb-50">
-                <div class="tutor-courses course">
-                    <div class="course-title d-block">
-                        <a href="#">
-                            <img class="course-img" src="../../assets/images/courses/2.jpg" alt="image">
-                        </a>
-                        <div class="name no-gutters row">
-                            <div class="col-12">
-                                <a href="#">
-                                    <h2 class="mb-0">Become a UX Designer Learn the Skills & Get Designer Learn the Designer Learn.</h2>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-details d-block">
-                        <div class="align-items-center no-gutters row">
-                            <div class="col-md-auto mr-auto col-sm-12 mb-md-0 mb-sm-10">
-                                <a href="#">
-                                    <p class="text-body-sm"><img width="20px" src="../../assets/images/icons/sales.svg" class="svg icon mr-10" alt="">5 sales</p>
-                                </a>
-                            </div>
-                            <div class="col-md-auto ml-auto col-sm-12">
-                                <a href="#">
-                                    <p class="text-body-sm"><img width="20px" src="../../assets/images/icons/two-users.svg" class="svg icon mr-10" alt="">95 Students</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="courses pb-50">
-                <div class="tutor-courses course">
-                    <div class="course-title d-block">
-                        <a href="#">
-                            <img class="course-img" src="../../assets/images/courses/3.jpg" alt="image">
-                        </a>
-                        <div class="name no-gutters row">
-                            <div class="col-12">
-                                <a href="#">
-                                    <h2 class="mb-0">Become a UX Designer Learn the Skills & Get Designer Learn the Designer Learn.</h2>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-details d-block">
-                        <div class="align-items-center no-gutters row">
-                            <div class="col-md-auto mr-auto col-sm-12 mb-md-0 mb-sm-10">
-                                <a href="#">
-                                    <p class="text-body-sm"><img width="20px" src="../../assets/images/icons/sales.svg" class="svg icon mr-10" alt="">5 sales</p>
-                                </a>
-                            </div>
-                            <div class="col-md-auto ml-auto col-sm-12">
-                                <a href="#">
-                                    <p class="text-body-sm"><img width="20px" src="../../assets/images/icons/two-users.svg" class="svg icon mr-10" alt="">95 Students</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="courses pb-50">
-                <div class="tutor-courses course">
-                    <div class="course-title d-block">
-                        <a href="#">
-                            <img class="course-img" src="../../assets/images/courses/4.jpg" alt="image">
-                        </a>
-                        <div class="name no-gutters row">
-                            <div class="col-12">
-                                <a href="#">
-                                    <h2 class="mb-0">Become a UX Designer Learn the Skills & Get Designer Learn the Designer Learn.</h2>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-details d-block">
-                        <div class="align-items-center no-gutters row">
-                            <div class="col-md-auto mr-auto col-sm-12 mb-md-0 mb-sm-10">
-                                <a href="#">
-                                    <p class="text-body-sm"><img width="20px" src="../../assets/images/icons/sales.svg" class="svg icon mr-10" alt="">5 sales</p>
-                                </a>
-                            </div>
-                            <div class="col-md-auto ml-auto col-sm-12">
-                                <a href="#">
-                                    <p class="text-body-sm"><img width="20px" src="../../assets/images/icons/two-users.svg" class="svg icon mr-10" alt="">95 Students</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="align-items-center col-lg-4 col-md-6 col-sm-12 d-flex">
+        <!-- <div class="align-items-center col-lg-4 col-md-6 col-sm-12 d-flex">
             <div class="col-12 h-100 no-gutters pb-50 text-center w-100">
                 <a href="#" data-toggle="modal" data-target="#create-course" class="h-100"><button class="tutor-courses empty inline">
                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none" class="svg icon replaced-svg">
@@ -160,7 +255,7 @@ require_once '../inc/sidebar.php';
                     <h4>Create course</h4>
                 </button></a>
             </div>
-        </div>
+        </div> -->
     </div>
     <div class="row no-gutters">
         <div class="col-12">
