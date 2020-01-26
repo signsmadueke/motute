@@ -32,6 +32,10 @@ $('#main .side.create').css({
     'padding-bottom': $('.chapter-actions').height() + 41 + "px"
 });
 
+// $('#main .side.create #chapters').css({
+//     'margin-bottom': $('.chapter-actions').height() + 41 + "px"
+// });
+
 
 $(".sidebar-overlay").click(function () {
 	var $module = $('.course .name h2');
@@ -151,6 +155,7 @@ $(document).ready(function() {
         // }
         if ($('.side.create').width() === $(window).width()){
 	        $('.side.create').toggleClass("hide");
+			$('.chapter-actions').toggleClass("hide");
 	    	$('.body.create').toggleClass("show");
 		}
     }

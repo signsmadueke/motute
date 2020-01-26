@@ -93,7 +93,7 @@ body.create {
     height: 100vh;
     max-height: 100vh;
     overflow: hidden;
-    background: #eeeeee;
+    /* background-color: var(--background-offwhite); */
     display: block;
     position: relative;
 }
@@ -103,7 +103,8 @@ body.create {
     max-height: 100%;
     width: 100%;
     overflow: hidden;
-    background: #eeeeee;
+    background: none;
+    background-color: transparent;
     display: block;
     position: fixed;
     transform: none;
@@ -162,6 +163,7 @@ body.create {
     display: block;
     /* height: calc(100% - 40px); */
     overflow: hidden;
+    border: 1px solid var(--background-gray);
     background-color: var(--brand-white);
     box-shadow: 0px 4px 10px rgba(194, 194, 194, 0.12);
     border-radius: 10px;
@@ -174,6 +176,7 @@ body.create {
     margin: 0px auto;
     margin-bottom: 90px;
     display: block;
+    border: 1px solid var(--background-gray);
     background-color: var(--brand-white);
     box-shadow: 0px 4px 10px rgba(194, 194, 194, 0.12);
     border-radius: 10px;
@@ -207,8 +210,9 @@ body.create {
     display: block;
     position: relative;
     width: 100%;
+    border: 1px solid var(--background-gray);
     background: var(--brand-white);
-    box-shadow: 0px 4px 10px rgba(194, 194, 194, 0.12);
+    /* box-shadow: 0px 4px 10px rgba(194, 194, 194, 0.12); */
     border-radius: 10px;
     /* overflow: hidden; */
     user-select: none;

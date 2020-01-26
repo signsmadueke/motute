@@ -10,7 +10,7 @@
                     <div class="bg-box col-md-6 create-course-bg" style=""></div>
                     <div class="col-md-6 create-course-form">
                         <h4 class="mb-30">Add Course</h4>
-                        <form action="new/" class="form-vertical mb-20" id="create-course-form" novalidate="novalidate">
+                        <form action="new/" class="form-vertical" id="create-course-form" novalidate="novalidate">
                             <div class="no-gutters row">
                                 <div class="col-12 mb-30 form-group">
                                     <label for="course-name">Course Name</label>
@@ -25,7 +25,7 @@
                             </div>
                             <div class="no-gutters row">
                                 <div class="col-12">
-                                    <input type="submit" class="btn btn-block btn-primary-sm col-lg-auto col-md-6 d-block" value="Save and continue">
+                                    <input type="submit" class="btn btn-block btn-primary-sm col-lg-auto d-block" value="Save and continue">
                                 </div>
                             </div>
                         </form>
