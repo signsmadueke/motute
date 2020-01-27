@@ -53,8 +53,11 @@ require_once '../inc/nav.php';
         <div class="col-lg-12">
             <div class="courses pb-50">
                 <div class="tutor-courses course">
+                    <div class="course-actions">
+                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                    </div>
                     <a href="#" class="course-img-link">
-                        <img width="20px" src="../../assets/images/icons/options.svg" class="svg icon mr-10" alt="">
                         <img class="course-img" src="../../assets/images/courses/1.jpg" alt="image">
                     </a>
                     <div class="course-details">
@@ -69,8 +72,11 @@ require_once '../inc/nav.php';
                 </div>
 
                 <div class="tutor-courses course">
+                    <div class="course-actions">
+                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                    </div>
                     <a href="#" class="course-img-link">
-                        <img width="20px" src="../../assets/images/icons/options.svg" class="svg icon mr-10" alt="">
                         <img class="course-img" src="../../assets/images/courses/2.jpg" alt="image">
                     </a>
                     <div class="course-details">
@@ -85,8 +91,11 @@ require_once '../inc/nav.php';
                 </div>
 
                 <div class="tutor-courses course">
+                    <div class="course-actions">
+                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                    </div>
                     <a href="#" class="course-img-link">
-                        <img width="20px" src="../../assets/images/icons/options.svg" class="svg icon mr-10" alt="">
                         <img class="course-img" src="../../assets/images/courses/3.jpg" alt="image">
                     </a>
                     <div class="course-details">
@@ -101,8 +110,11 @@ require_once '../inc/nav.php';
                 </div>
 
                 <div class="tutor-courses course">
+                    <div class="course-actions">
+                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                    </div>
                     <a href="#" class="course-img-link">
-                        <img width="20px" src="../../assets/images/icons/options.svg" class="svg icon mr-10" alt="">
                         <img class="course-img" src="../../assets/images/courses/4.jpg" alt="image">
                     </a>
                     <div class="course-details">
@@ -117,8 +129,11 @@ require_once '../inc/nav.php';
                 </div>
 
                 <div class="tutor-courses course">
+                    <div class="course-actions">
+                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                    </div>
                     <a href="#" class="course-img-link">
-                        <img width="20px" src="../../assets/images/icons/options.svg" class="svg icon mr-10" alt="">
                         <img class="course-img" src="../../assets/images/courses/5.jpg" alt="image">
                     </a>
                     <div class="course-details">
@@ -133,8 +148,11 @@ require_once '../inc/nav.php';
                 </div>
 
                 <div class="tutor-courses course">
+                    <div class="course-actions">
+                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                    </div>
                     <a href="#" class="course-img-link">
-                        <img width="20px" src="../../assets/images/icons/options.svg" class="svg icon mr-10" alt="">
                         <img class="course-img" src="../../assets/images/courses/6.jpg" alt="image">
                     </a>
                     <div class="course-details">
@@ -149,8 +167,11 @@ require_once '../inc/nav.php';
                 </div>
 
                 <div class="tutor-courses course">
+                    <div class="course-actions">
+                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                    </div>
                     <a href="#" class="course-img-link">
-                        <img width="20px" src="../../assets/images/icons/options.svg" class="svg icon mr-10" alt="">
                         <img class="course-img" src="../../assets/images/courses/7.jpg" alt="image">
                     </a>
                     <div class="course-details">
@@ -165,8 +186,11 @@ require_once '../inc/nav.php';
                 </div>
 
                 <div class="tutor-courses course">
+                    <div class="course-actions">
+                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                    </div>
                     <a href="#" class="course-img-link">
-                        <img width="20px" src="../../assets/images/icons/options.svg" class="svg icon mr-10" alt="">
                         <img class="course-img" src="../../assets/images/courses/8.jpg" alt="image">
                     </a>
                     <div class="course-details">
@@ -181,8 +205,11 @@ require_once '../inc/nav.php';
                 </div>
 
                 <div class="tutor-courses course">
+                    <div class="course-actions">
+                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                    </div>
                     <a href="#" class="course-img-link">
-                        <img width="20px" src="../../assets/images/icons/options.svg" class="svg icon mr-10" alt="">
                         <img class="course-img" src="../../assets/images/courses/1.jpg" alt="image">
                     </a>
                     <div class="course-details">
@@ -197,8 +224,11 @@ require_once '../inc/nav.php';
                 </div>
 
                 <div class="tutor-courses course">
+                    <div class="course-actions">
+                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                    </div>
                     <a href="#" class="course-img-link">
-                        <img width="20px" src="../../assets/images/icons/options.svg" class="svg icon mr-10" alt="">
                         <img class="course-img" src="../../assets/images/courses/2.jpg" alt="image">
                     </a>
                     <div class="course-details">
@@ -213,8 +243,11 @@ require_once '../inc/nav.php';
                 </div>
 
                 <div class="tutor-courses course">
+                    <div class="course-actions">
+                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                    </div>
                     <a href="#" class="course-img-link">
-                        <img width="20px" src="../../assets/images/icons/options.svg" class="svg icon mr-10" alt="">
                         <img class="course-img" src="../../assets/images/courses/3.jpg" alt="image">
                     </a>
                     <div class="course-details">
@@ -229,8 +262,11 @@ require_once '../inc/nav.php';
                 </div>
 
                 <div class="tutor-courses course">
+                    <div class="course-actions">
+                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                    </div>
                     <a href="#" class="course-img-link">
-                        <img width="20px" src="../../assets/images/icons/options.svg" class="svg icon mr-10" alt="">
                         <img class="course-img" src="../../assets/images/courses/4.jpg" alt="image">
                     </a>
                     <div class="course-details">
@@ -245,8 +281,11 @@ require_once '../inc/nav.php';
                 </div>
 
                 <div class="tutor-courses course">
+                    <div class="course-actions">
+                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                    </div>
                     <a href="#" class="course-img-link">
-                        <img width="20px" src="../../assets/images/icons/options.svg" class="svg icon mr-10" alt="">
                         <img class="course-img" src="../../assets/images/courses/5.jpg" alt="image">
                     </a>
                     <div class="course-details">

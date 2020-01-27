@@ -428,6 +428,17 @@ body {
     content: none;
 }
 
+.course.tutor-courses .course-actions {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.course.tutor-courses .course-actions a {
+    padding: 10px;
+}
 
 /* Modal */
 .modal-open .modal {
