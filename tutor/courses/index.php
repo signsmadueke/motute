@@ -6,43 +6,46 @@ require_once '../inc/sidebar.php';
 require_once '../inc/nav.php';
 ?>
 
-<div id="main" class="">
-    <div class="row">
-        <div class="col-12">
+<div class="header-actions">
+    <div class="first-row">
+        <div>
             <h1 class="page-title">Courses</h1>
         </div>
+        <div>
+            <a class="btn btn-primary-sm" href="#" data-toggle="modal" data-target="#create-course">Add Course</a>
+        </div>
     </div>
-
+    <div class="second-row">
+        <div>
+            <form action="#" class="form-inline search w-100 align-items-center">
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-append">
+                            <button type="submit" class="btn btn-link dark"><img class="svg icon" alt="" src="../../assets/images/icons/outline-search-24px.svg"></button>
+                        </div>
+                        <input type="search" class="form-control" placeholder="Search Courses">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div>
+            <ul class="nav tabs">
+                <li class="tab tab-secondary">
+                    <a class="active" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true"><span>Active</span></a>
+                </li>
+                <li class="tab tab-secondary">
+                    <a class=""  data-toggle="tab" href="#account" role="tab" aria-controls="account" aria-selected="false"><span>Drafts</span></a>
+                </li>
+                <li class="tab tab-secondary">
+                    <a class=""  data-toggle="tab" href="#account" role="tab" aria-controls="account" aria-selected="false"><span>Archived</span></a>
+                </li>                
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="main" class="">
     <div class="row no-gutters">
         <div class="col-12">
-            <div class="header-actions">
-                <div>
-                    <a class="btn btn-primary-sm" href="#" data-toggle="modal" data-target="#create-course">Add Course</a>
-                </div>
-                <div>
-                    <form action="#" class="form-inline search w-100 align-items-center">
-                        <div class="form-group">
-                            <div class="input-group">
-                                <div class="input-group-append">
-                                    <button type="submit" class="btn btn-link dark"><img class="svg icon" alt="" src="../../assets/images/icons/outline-search-24px.svg"></button>
-                                </div>
-                                <input type="search" class="form-control" placeholder="Search Courses">
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <ul class="nav tabs">
-                    <li class="tab tab-secondary">
-                        <a class="active" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true"><span>Active</span></a>
-                    </li>
-                    <li class="tab tab-secondary">
-                        <a class=""  data-toggle="tab" href="#account" role="tab" aria-controls="account" aria-selected="false"><span>Drafts</span></a>
-                    </li>
-                    <li class="tab tab-secondary">
-                        <a class=""  data-toggle="tab" href="#account" role="tab" aria-controls="account" aria-selected="false"><span>Archived</span></a>
-                    </li>                
-                </ul>
-            </nav>
         </div>
     </div>
 
@@ -51,6 +54,7 @@ require_once '../inc/nav.php';
             <div class="courses pb-50">
                 <div class="tutor-courses course">
                     <a href="#" class="course-img-link">
+                        <img width="20px" src="../../assets/images/icons/options.svg" class="svg icon mr-10" alt="">
                         <img class="course-img" src="../../assets/images/courses/1.jpg" alt="image">
                     </a>
                     <div class="course-details">
@@ -66,6 +70,7 @@ require_once '../inc/nav.php';
 
                 <div class="tutor-courses course">
                     <a href="#" class="course-img-link">
+                        <img width="20px" src="../../assets/images/icons/options.svg" class="svg icon mr-10" alt="">
                         <img class="course-img" src="../../assets/images/courses/2.jpg" alt="image">
                     </a>
                     <div class="course-details">
@@ -81,6 +86,7 @@ require_once '../inc/nav.php';
 
                 <div class="tutor-courses course">
                     <a href="#" class="course-img-link">
+                        <img width="20px" src="../../assets/images/icons/options.svg" class="svg icon mr-10" alt="">
                         <img class="course-img" src="../../assets/images/courses/3.jpg" alt="image">
                     </a>
                     <div class="course-details">
@@ -96,6 +102,7 @@ require_once '../inc/nav.php';
 
                 <div class="tutor-courses course">
                     <a href="#" class="course-img-link">
+                        <img width="20px" src="../../assets/images/icons/options.svg" class="svg icon mr-10" alt="">
                         <img class="course-img" src="../../assets/images/courses/4.jpg" alt="image">
                     </a>
                     <div class="course-details">
@@ -111,6 +118,7 @@ require_once '../inc/nav.php';
 
                 <div class="tutor-courses course">
                     <a href="#" class="course-img-link">
+                        <img width="20px" src="../../assets/images/icons/options.svg" class="svg icon mr-10" alt="">
                         <img class="course-img" src="../../assets/images/courses/5.jpg" alt="image">
                     </a>
                     <div class="course-details">
@@ -126,6 +134,7 @@ require_once '../inc/nav.php';
 
                 <div class="tutor-courses course">
                     <a href="#" class="course-img-link">
+                        <img width="20px" src="../../assets/images/icons/options.svg" class="svg icon mr-10" alt="">
                         <img class="course-img" src="../../assets/images/courses/6.jpg" alt="image">
                     </a>
                     <div class="course-details">
@@ -141,6 +150,7 @@ require_once '../inc/nav.php';
 
                 <div class="tutor-courses course">
                     <a href="#" class="course-img-link">
+                        <img width="20px" src="../../assets/images/icons/options.svg" class="svg icon mr-10" alt="">
                         <img class="course-img" src="../../assets/images/courses/7.jpg" alt="image">
                     </a>
                     <div class="course-details">
@@ -156,6 +166,7 @@ require_once '../inc/nav.php';
 
                 <div class="tutor-courses course">
                     <a href="#" class="course-img-link">
+                        <img width="20px" src="../../assets/images/icons/options.svg" class="svg icon mr-10" alt="">
                         <img class="course-img" src="../../assets/images/courses/8.jpg" alt="image">
                     </a>
                     <div class="course-details">
@@ -171,6 +182,7 @@ require_once '../inc/nav.php';
 
                 <div class="tutor-courses course">
                     <a href="#" class="course-img-link">
+                        <img width="20px" src="../../assets/images/icons/options.svg" class="svg icon mr-10" alt="">
                         <img class="course-img" src="../../assets/images/courses/1.jpg" alt="image">
                     </a>
                     <div class="course-details">
@@ -186,6 +198,7 @@ require_once '../inc/nav.php';
 
                 <div class="tutor-courses course">
                     <a href="#" class="course-img-link">
+                        <img width="20px" src="../../assets/images/icons/options.svg" class="svg icon mr-10" alt="">
                         <img class="course-img" src="../../assets/images/courses/2.jpg" alt="image">
                     </a>
                     <div class="course-details">
@@ -201,6 +214,7 @@ require_once '../inc/nav.php';
 
                 <div class="tutor-courses course">
                     <a href="#" class="course-img-link">
+                        <img width="20px" src="../../assets/images/icons/options.svg" class="svg icon mr-10" alt="">
                         <img class="course-img" src="../../assets/images/courses/3.jpg" alt="image">
                     </a>
                     <div class="course-details">
@@ -216,6 +230,7 @@ require_once '../inc/nav.php';
 
                 <div class="tutor-courses course">
                     <a href="#" class="course-img-link">
+                        <img width="20px" src="../../assets/images/icons/options.svg" class="svg icon mr-10" alt="">
                         <img class="course-img" src="../../assets/images/courses/4.jpg" alt="image">
                     </a>
                     <div class="course-details">
@@ -231,6 +246,7 @@ require_once '../inc/nav.php';
 
                 <div class="tutor-courses course">
                     <a href="#" class="course-img-link">
+                        <img width="20px" src="../../assets/images/icons/options.svg" class="svg icon mr-10" alt="">
                         <img class="course-img" src="../../assets/images/courses/5.jpg" alt="image">
                     </a>
                     <div class="course-details">
@@ -268,18 +284,52 @@ require_once '../inc/nav.php';
             </a> -->
         </div>
     </div>
-    <footer id="footer">
-        <div class="row no-gutters">
-            <div class="col-md-auto mr-auto col-sm-12 mb-md-0 mb-sm-10"><p>Copyright © 2019 <a href="#">Motute, Inc.</a></p></div>
-            <div class="col-md-auto ml-auto d-flex col-sm-12">
-                <a href="#" class="mr-20">Privacy</a>
-                <a href="#">Terms</a>
-            </div>
-        </div>
-    </footer>
     <div class="bg-wrap">
         <div class="bg"></div>
     </div>
 </div>
-
 <?php require_once '../inc/footer.php'; ?>
+</section>
+<?php require_once '../inc/scripts.php'; ?>
+<div class="modal-container">
+    <div class="modal fade" id="create-course" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content zoom">
+                <button type="button" class="btn close" data-dismiss="modal" aria-label="Close">
+                    <img width="20px" src="../../assets/images/icons/x.svg" class="svg icon" alt="">
+                </button>
+                <div class="align-items-center modal-body no-gutters row">
+                    <div class="bg-box col-md-6 create-course-bg" style=""></div>
+                    <div class="col-md-6 create-course-form">
+                        <h4 class="mb-30">Add Course</h4>
+                        <form action="new/" class="form-vertical" id="create-course-form" novalidate="novalidate">
+                            <div class="no-gutters row">
+                                <div class="col-12 mb-30 form-group">
+                                    <label for="course-name">Course Name</label>
+                                    <input autofocus="" type="text" class="form-control" placeholder="eg: Learn Figma" id="course-name" name="course-name" required="">
+                                </div>
+                            </div>
+                            <div class="no-gutters row">
+                                <div class="col-12 mb-30 form-group">
+                                    <label for="username">Course Description</label>
+                                    <textarea autofocus="" type="text" class="form-control" placeholder="eg: Learn Figma" id="course-description" name="course-description" required="" rows="5"></textarea>
+                                </div>
+                            </div>
+                            <div class="no-gutters row">
+                                <div class="col-12">
+                                    <input type="submit" class="btn btn-block btn-primary-sm col-lg-auto d-block" value="Save and continue">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="bg-wrap">
+                    <div class="bg"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

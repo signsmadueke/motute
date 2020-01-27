@@ -149,15 +149,16 @@ require_once '../inc/nav.php';
             <div class="bg"></div>
         </div>
     </section>
-    <footer id="footer">
-        <div class="row no-gutters">
-            <div class="col-md-auto mr-auto col-sm-12 mb-md-0 mb-sm-10"><p>Copyright © 2019 <a href="#">Motute, Inc.</a></p></div>
-            <div class="col-md-auto ml-auto d-flex col-sm-12">
-                <a href="#" class="mr-20">Privacy</a>
-                <a href="#">Terms</a>
-            </div>
-        </div>
-    </footer>
 </div>
-
 <?php require_once '../inc/footer.php'; ?>
+</section>
+<?php require_once '../inc/scripts.php'; ?>
+
+<script>
+    var cw = $('.user-pic-div').height();
+    $('.user-pic').css({
+        'width': cw + 'px'
+    });
+</script>
+</body>
+</html>

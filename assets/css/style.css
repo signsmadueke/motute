@@ -58,7 +58,7 @@
 .owl-theme .owl-dot {
     width: 15px;
     height: 15px;
-    border: 2px solid var(--color-primary);
+    border: 2px solid var(--brand-primary);
     border-radius: 100px;
     margin-right: 30px;
 }
@@ -68,7 +68,7 @@
 }
 
 .owl-theme .owl-dot.active {
-    background: var(--color-primary);
+    background: var(--brand-primary);
     border: none;
 }
 
@@ -81,7 +81,7 @@
     margin-bottom: 20px;
     width: 75px;
     height: 2px;
-    background-color: var(--color-primary);
+    background-color: var(--brand-primary);
     margin-left: auto;
     margin-right: auto;
 }
@@ -93,7 +93,7 @@
 
 .check-right:before {
     content: '\e961';
-    color: var(--color-primary);
+    color: var(--brand-primary);
     font-size: 21px;
     font-family: 'osfont' !important;
     speak: none;
@@ -727,7 +727,7 @@
 .owl-theme .owl-dot {
     width: 15px;
     height: 15px;
-    border: 2px solid var(--color-primary);
+    border: 2px solid var(--brand-primary);
     border-radius: 100px;
     margin-right: 30px;
 }
@@ -737,7 +737,7 @@
 }
 
 .owl-theme .owl-dot.active {
-    background: var(--color-primary);
+    background: var(--brand-primary);
     border: none;
 }
 
@@ -1007,11 +1007,11 @@ form .form-group .pre-icon {
 
 #home #services a.service img,
 #home #services a.service span {
-    transition: all 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: all 0.2s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 #home #services a.service:hover span {
-    color: var(--color-primary) !important;
+    color: var(--brand-primary) !important;
 }
 
 #home #services a.service:hover img,
@@ -1085,7 +1085,7 @@ form .form-group .pre-icon {
 #home #blog .post .date .category {
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: var(--color-primary);
+    color: var(--brand-primary);
 }
 
 #home #blog .post .name {

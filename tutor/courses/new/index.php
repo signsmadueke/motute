@@ -44,7 +44,7 @@ $title = 'Add New Course';
         <nav id="nav" class="main navbar create">
             <div class="no-gutters row w-100 align-items-center">
                 <div class="col-auto border-right">
-                    <a class="btn header-btn icon-only" href="#"><img src="../../../assets/images/icons/arrow-left.svg" class="svg icon" alt=""></a>
+                    <a class="btn header-btn icon-only" href="../"><img src="../../../assets/images/icons/arrow-left.svg" class="svg icon" alt=""></a>
                 </div>
                 <div class="col-auto">
                     <a class="btn header-btn icon-only menu" href="#"><img src="../../../assets/images/icons/menu.svg" class="svg icon" alt=""></a>
@@ -56,7 +56,7 @@ $title = 'Add New Course';
                     </div>
                 </div>
                 <div class="col-auto border-left">
-                    <a class="header-btn btn with-icon icon-right" href="#">
+                    <a class="header-btn btn with-icon icon-right" href="../settings.php">
                         <h6 class="mb-0">Save</h6><img src="../../../assets/images/icons/save.svg" class="svg icon" alt="">
                     </a>
                 </div>

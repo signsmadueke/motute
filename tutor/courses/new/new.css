@@ -127,7 +127,6 @@ body.create {
     display: block;
     /* bottom: 0; */
     /* left: 0; */
-    padding-bottom: 75px;
 }
 
 #main .body.create {
@@ -202,6 +201,7 @@ body.create {
     /* padding-bottom: 103px; */
     transition: all .3s ease-in-out 0s;
     /* padding-bottom: 160px; */
+    padding-bottom: 107px;
 }
 
 .chapter {
@@ -276,7 +276,7 @@ body.create {
     bottom: 0;
     position: fixed;
     width: 400px;
-    background-color: var(--background-gray);
+    background-color: var(--background-offwhite);
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     padding: 20px;
     height: auto;
@@ -323,9 +323,9 @@ body.create {
 }
 
 .chapter .chapter-title p {
-    font-family: CircularStd;
+    font-family: CircularStdBold;
+    font-weight: normal;
     font-style: normal;
-    font-weight: bold;
     font-size: 11px;
     line-height: 12px;
     letter-spacing: 1px;

@@ -20,7 +20,7 @@ $(".sidebar-overlay").click(function () {
     var $sidebar = $('#sidebar');
     var $menu = $('#menu');
     $sidebar.toggleClass("hide");
-    $body.toggleClass("modal-open");
+    $body.toggleClass("sidebar-opened");
 });
 
 $('#main .body.create').css({
@@ -28,8 +28,11 @@ $('#main .body.create').css({
 });
 
 $('#main .side.create').css({
-    'height': "calc(100vh - " + $('#nav').height() + "px)",
-    'padding-bottom': $('.chapter-actions').height() + 41 + "px"
+    'height': "calc(100vh - " + $('#nav').height() + "px)"
+});
+
+$('#main .side.create #chapters').css({
+    'padding-bottom': $('.chapter-actions').height() + 61 + "px"
 });
 
 // $('#main .side.create #chapters').css({
