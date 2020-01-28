@@ -35,7 +35,7 @@
 </head>
 
 <body class="body">
-    <nav id="nav" class="main navbar position-relative">
+    <nav id="nav" class="main navbar fixed-top padding-x2">
         <div class="container">
             <div class="align-items-center d-flex">
                 <div class="col-auto ml-auto mr-auto">
@@ -51,7 +51,7 @@
             <div class="bg"></div>
         </div>
     </nav>
-    <div id="body" class="login-form">
+    <div id="body" class="login-form pt-150">
         <div class="greeting text-center mb-30">
             <h3 class="mb-20" style="">Sign In</h3>
             <p class="body-text text-form">There's a lot to learn from the inside.</p>
@@ -98,6 +98,10 @@
                 </div>
             </div>
             <button type="button" onclick = "LogInUser()" id = "login-button" class="btn btn-block btn-primary">Log In</button>
+            
+            <p class="spaced-text mb-30 mt-30 text-center">or</p>
+            
+            <button type="button" onclick = "LogInUser()" id = "login-button" class="btn btn-block btn-white btn-sumo"><img class="icon svg" alt="" src="assets/images/icons/social/sumotrust.svg">Login with SumoTrust</button>
 
         </form>
         <p class="mb-10 text-center text-form">Forgot your password? <a href="reset-password.php">Reset it</a></p>

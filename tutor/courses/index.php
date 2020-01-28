@@ -45,21 +45,24 @@ require_once '../inc/nav.php';
 </div>
 <div id="main" class="">
     <div class="row no-gutters">
-        <div class="col-12">
-        </div>
-    </div>
-
-    <div class="row no-gutters">
         <div class="col-lg-12">
-            <div class="courses pb-50">
+            <form action="#" class="courses">
                 <div class="tutor-courses course">
-                    <div class="course-actions">
-                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
-                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                    <div class="course-image">
+                        <div class="course-actions">
+                            <div>
+                                <div class="custom-control custom-checkbox mb-30">
+                                    <label class="check">
+                                        <input type="checkbox" id="checkbox" required="">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div></div>
+                            <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                        </div>
+                        <img src="../../assets/images/courses/1.jpg" alt="image">
                     </div>
-                    <a href="#" class="course-img-link">
-                        <img class="course-img" src="../../assets/images/courses/1.jpg" alt="image">
-                    </a>
                     <div class="course-details">
                         <a href="#">
                             <!-- <h2 class="mb-0">Become a UX Designer Learn the Skills & Get Designer Learn the Designer Learn.</h2> -->
@@ -72,13 +75,21 @@ require_once '../inc/nav.php';
                 </div>
 
                 <div class="tutor-courses course">
-                    <div class="course-actions">
-                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
-                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                    <div class="course-image">
+                        <div class="course-actions">
+                            <div>
+                                <div class="custom-control custom-checkbox mb-30">
+                                    <label class="check">
+                                        <input type="checkbox" id="checkbox" required="">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div></div>
+                            <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                        </div>
+                        <img src="../../assets/images/courses/2.jpg" alt="image">
                     </div>
-                    <a href="#" class="course-img-link">
-                        <img class="course-img" src="../../assets/images/courses/2.jpg" alt="image">
-                    </a>
                     <div class="course-details">
                         <a href="#">
                             <!-- <h2 class="mb-0">Become a UX Designer Learn the Skills & Get Designer Learn the Designer Learn.</h2> -->
@@ -91,13 +102,21 @@ require_once '../inc/nav.php';
                 </div>
 
                 <div class="tutor-courses course">
-                    <div class="course-actions">
-                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
-                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                    <div class="course-image">
+                        <div class="course-actions">
+                            <div>
+                                <div class="custom-control custom-checkbox mb-30">
+                                    <label class="check">
+                                        <input type="checkbox" id="checkbox" required="">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div></div>
+                            <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                        </div>
+                        <img src="../../assets/images/courses/3.jpg" alt="image">
                     </div>
-                    <a href="#" class="course-img-link">
-                        <img class="course-img" src="../../assets/images/courses/3.jpg" alt="image">
-                    </a>
                     <div class="course-details">
                         <a href="#">
                             <!-- <h2 class="mb-0">Become a UX Designer Learn the Skills & Get Designer Learn the Designer Learn.</h2> -->
@@ -110,13 +129,21 @@ require_once '../inc/nav.php';
                 </div>
 
                 <div class="tutor-courses course">
-                    <div class="course-actions">
-                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
-                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                    <div class="course-image">
+                        <div class="course-actions">
+                            <div>
+                                <div class="custom-control custom-checkbox mb-30">
+                                    <label class="check">
+                                        <input type="checkbox" id="checkbox" required="">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div></div>
+                            <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                        </div>
+                        <img src="../../assets/images/courses/4.jpg" alt="image">
                     </div>
-                    <a href="#" class="course-img-link">
-                        <img class="course-img" src="../../assets/images/courses/4.jpg" alt="image">
-                    </a>
                     <div class="course-details">
                         <a href="#">
                             <!-- <h2 class="mb-0">Become a UX Designer Learn the Skills & Get Designer Learn the Designer Learn.</h2> -->
@@ -129,13 +156,21 @@ require_once '../inc/nav.php';
                 </div>
 
                 <div class="tutor-courses course">
-                    <div class="course-actions">
-                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
-                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                    <div class="course-image">
+                        <div class="course-actions">
+                            <div>
+                                <div class="custom-control custom-checkbox mb-30">
+                                    <label class="check">
+                                        <input type="checkbox" id="checkbox" required="">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div></div>
+                            <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                        </div>
+                        <img src="../../assets/images/courses/5.jpg" alt="image">
                     </div>
-                    <a href="#" class="course-img-link">
-                        <img class="course-img" src="../../assets/images/courses/5.jpg" alt="image">
-                    </a>
                     <div class="course-details">
                         <a href="#">
                             <!-- <h2 class="mb-0">Become a UX Designer Learn the Skills & Get Designer Learn the Designer Learn.</h2> -->
@@ -148,13 +183,21 @@ require_once '../inc/nav.php';
                 </div>
 
                 <div class="tutor-courses course">
-                    <div class="course-actions">
-                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
-                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                    <div class="course-image">
+                        <div class="course-actions">
+                            <div>
+                                <div class="custom-control custom-checkbox mb-30">
+                                    <label class="check">
+                                        <input type="checkbox" id="checkbox" required="">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div></div>
+                            <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                        </div>
+                        <img src="../../assets/images/courses/6.jpg" alt="image">
                     </div>
-                    <a href="#" class="course-img-link">
-                        <img class="course-img" src="../../assets/images/courses/6.jpg" alt="image">
-                    </a>
                     <div class="course-details">
                         <a href="#">
                             <!-- <h2 class="mb-0">Become a UX Designer Learn the Skills & Get Designer Learn the Designer Learn.</h2> -->
@@ -167,13 +210,21 @@ require_once '../inc/nav.php';
                 </div>
 
                 <div class="tutor-courses course">
-                    <div class="course-actions">
-                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
-                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                    <div class="course-image">
+                        <div class="course-actions">
+                            <div>
+                                <div class="custom-control custom-checkbox mb-30">
+                                    <label class="check">
+                                        <input type="checkbox" id="checkbox" required="">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div></div>
+                            <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                        </div>
+                        <img src="../../assets/images/courses/7.jpg" alt="image">
                     </div>
-                    <a href="#" class="course-img-link">
-                        <img class="course-img" src="../../assets/images/courses/7.jpg" alt="image">
-                    </a>
                     <div class="course-details">
                         <a href="#">
                             <!-- <h2 class="mb-0">Become a UX Designer Learn the Skills & Get Designer Learn the Designer Learn.</h2> -->
@@ -186,13 +237,21 @@ require_once '../inc/nav.php';
                 </div>
 
                 <div class="tutor-courses course">
-                    <div class="course-actions">
-                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
-                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                    <div class="course-image">
+                        <div class="course-actions">
+                            <div>
+                                <div class="custom-control custom-checkbox mb-30">
+                                    <label class="check">
+                                        <input type="checkbox" id="checkbox" required="">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div></div>
+                            <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                        </div>
+                        <img src="../../assets/images/courses/8.jpg" alt="image">
                     </div>
-                    <a href="#" class="course-img-link">
-                        <img class="course-img" src="../../assets/images/courses/8.jpg" alt="image">
-                    </a>
                     <div class="course-details">
                         <a href="#">
                             <!-- <h2 class="mb-0">Become a UX Designer Learn the Skills & Get Designer Learn the Designer Learn.</h2> -->
@@ -205,13 +264,21 @@ require_once '../inc/nav.php';
                 </div>
 
                 <div class="tutor-courses course">
-                    <div class="course-actions">
-                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
-                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                    <div class="course-image">
+                        <div class="course-actions">
+                            <div>
+                                <div class="custom-control custom-checkbox mb-30">
+                                    <label class="check">
+                                        <input type="checkbox" id="checkbox" required="">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div></div>
+                            <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                        </div>
+                        <img src="../../assets/images/courses/1.jpg" alt="image">
                     </div>
-                    <a href="#" class="course-img-link">
-                        <img class="course-img" src="../../assets/images/courses/1.jpg" alt="image">
-                    </a>
                     <div class="course-details">
                         <a href="#">
                             <!-- <h2 class="mb-0">Become a UX Designer Learn the Skills & Get Designer Learn the Designer Learn.</h2> -->
@@ -224,13 +291,21 @@ require_once '../inc/nav.php';
                 </div>
 
                 <div class="tutor-courses course">
-                    <div class="course-actions">
-                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
-                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                    <div class="course-image">
+                        <div class="course-actions">
+                            <div>
+                                <div class="custom-control custom-checkbox mb-30">
+                                    <label class="check">
+                                        <input type="checkbox" id="checkbox" required="">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div></div>
+                            <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                        </div>
+                        <img src="../../assets/images/courses/2.jpg" alt="image">
                     </div>
-                    <a href="#" class="course-img-link">
-                        <img class="course-img" src="../../assets/images/courses/2.jpg" alt="image">
-                    </a>
                     <div class="course-details">
                         <a href="#">
                             <!-- <h2 class="mb-0">Become a UX Designer Learn the Skills & Get Designer Learn the Designer Learn.</h2> -->
@@ -243,13 +318,21 @@ require_once '../inc/nav.php';
                 </div>
 
                 <div class="tutor-courses course">
-                    <div class="course-actions">
-                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
-                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                    <div class="course-image">
+                        <div class="course-actions">
+                            <div>
+                                <div class="custom-control custom-checkbox mb-30">
+                                    <label class="check">
+                                        <input type="checkbox" id="checkbox" required="">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div></div>
+                            <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                        </div>
+                        <img src="../../assets/images/courses/3.jpg" alt="image">
                     </div>
-                    <a href="#" class="course-img-link">
-                        <img class="course-img" src="../../assets/images/courses/3.jpg" alt="image">
-                    </a>
                     <div class="course-details">
                         <a href="#">
                             <!-- <h2 class="mb-0">Become a UX Designer Learn the Skills & Get Designer Learn the Designer Learn.</h2> -->
@@ -262,13 +345,21 @@ require_once '../inc/nav.php';
                 </div>
 
                 <div class="tutor-courses course">
-                    <div class="course-actions">
-                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
-                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                    <div class="course-image">
+                        <div class="course-actions">
+                            <div>
+                                <div class="custom-control custom-checkbox mb-30">
+                                    <label class="check">
+                                        <input type="checkbox" id="checkbox" required="">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div></div>
+                            <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                        </div>
+                        <img src="../../assets/images/courses/4.jpg" alt="image">
                     </div>
-                    <a href="#" class="course-img-link">
-                        <img class="course-img" src="../../assets/images/courses/4.jpg" alt="image">
-                    </a>
                     <div class="course-details">
                         <a href="#">
                             <!-- <h2 class="mb-0">Become a UX Designer Learn the Skills & Get Designer Learn the Designer Learn.</h2> -->
@@ -281,13 +372,21 @@ require_once '../inc/nav.php';
                 </div>
 
                 <div class="tutor-courses course">
-                    <div class="course-actions">
-                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
-                        <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                    <div class="course-image">
+                        <div class="course-actions">
+                            <div>
+                                <div class="custom-control custom-checkbox mb-30">
+                                    <label class="check">
+                                        <input type="checkbox" id="checkbox" required="">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div></div>
+                            <a href="#"><img width="20px" src="../../assets/images/icons/options.svg" class="svg icon" alt=""></a>
+                        </div>
+                        <img src="../../assets/images/courses/5.jpg" alt="image">
                     </div>
-                    <a href="#" class="course-img-link">
-                        <img class="course-img" src="../../assets/images/courses/5.jpg" alt="image">
-                    </a>
                     <div class="course-details">
                         <a href="#">
                             <!-- <h2 class="mb-0">Become a UX Designer Learn the Skills & Get Designer Learn the Designer Learn.</h2> -->
@@ -298,7 +397,7 @@ require_once '../inc/nav.php';
                         <p class="course-info"><img width="20px" src="../../assets/images/icons/tag.svg" class="svg icon mr-10" alt=""><a href="#">Technology</a>, <a href="#">Design</a></p>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
         <!-- <div class="align-items-center col-lg-4 col-md-6 col-sm-12 d-flex">
             <div class="col-12 h-100 no-gutters pb-50 text-center w-100">
@@ -337,9 +436,9 @@ require_once '../inc/nav.php';
                 <button type="button" class="btn close" data-dismiss="modal" aria-label="Close">
                     <img width="20px" src="../../assets/images/icons/x.svg" class="svg icon" alt="">
                 </button>
-                <div class="align-items-center modal-body no-gutters row">
-                    <div class="bg-box col-md-6 create-course-bg" style=""></div>
-                    <div class="col-md-6 create-course-form">
+                <div class="modal-body">
+                    <div class="create-course-bg" style=""></div>
+                    <div class="create-course-form">
                         <h4 class="mb-30">Add Course</h4>
                         <form action="new/" class="form-vertical" id="create-course-form" novalidate="novalidate">
                             <div class="no-gutters row">

@@ -14,12 +14,12 @@ body {
 }
 
 #nav #menu {
-    padding: 10px 10px;
+    padding: 5px;
 }
 
 #nav #menu svg {
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
 }
 
 #nav #menu svg path {
@@ -236,6 +236,52 @@ body {
     opacity: 1;
 }
 
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 1px solid var(--brand-white);
+    box-sizing: border-box;
+    border-radius: 3px;
+    transition: all 0.2s ease-in;
+}
+
+.check:hover input ~ .checkmark {
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.check input:checked ~ .checkmark {
+    background-color: var(--brand-white);
+    border: 1px solid var(--brand-white);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    transition: all 0.2s ease-in;
+}
+
+.check input:checked ~ .checkmark:after {
+    opacity: 1;
+}
+
+.check .checkmark:after {
+    left: 7px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid var(--brand-primary);
+    border-width: 0 2px 2px 0;
+    border-radius: 10px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
 .page-title {
     margin-bottom: 0;
 }
@@ -354,6 +400,8 @@ body {
     grid-column-gap: 30px;
     grid-row-gap: 30px;
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .course.tutor-courses {
@@ -368,18 +416,27 @@ body {
     justify-content: stretch;
     grid-row-gap: 0px;
     width: 100%;
+    position: relative;
+    cursor: auto;
 }
 
-.course.tutor-courses .course-img-link {
+.course.tutor-courses .course-image {
     width: 100%;
     height: 100%;
     display: block;
+    position: relative;
 }
 
-.course.tutor-courses .course-img-link .course-img {
+.course.tutor-courses:hover .course-actions {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.course.tutor-courses .course-image img {
     margin-bottom: 0;
     height: 100%;
     width: 100%;
+    object-fit: cover;
+    border-radius: 0px;
 }
 
 .course.tutor-courses .course-details {
@@ -432,12 +489,18 @@ body {
     position: absolute;
     top: 0;
     width: 100%;
+    height: 100%;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto 1fr auto;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .course.tutor-courses .course-actions a {
-    padding: 10px;
+    padding: 10px 10px 20px 10px;
+}
+
+.course.tutor-courses .course-actions .checkmark {
+    margin: 10px;
 }
 
 /* Modal */
@@ -468,7 +531,8 @@ body {
 }
 
 
-#create-course.modal .modal-dialog .close svg {
+#create-course.modal .modal-dialog .close svg,
+#create-course.modal .modal-dialog .close img {
     width: 15px;
     height: 15px;
 }
@@ -477,24 +541,32 @@ body {
     fill: var(--brand-white);
 }
 
+#create-course.modal .modal-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 0px;
+}
+
 #create-course.modal .create-course-bg {
-
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(../../../assets/images/heros/create-course-bg.jpg);
-
     background-position: center center;
-
     background-size: cover;
+    width: 100%;
+    height: 100%;
 }
 
 #create-course.modal .create-course-form {
     padding: 50px 30px;
-    margin-left: auto;
 }
 
 @media (max-width: 768px) {
     #create-course.modal .create-course-form {
         padding: 50px 20px 20px 20px;
-        margin-left: auto;
+    }
+    #create-course.modal .modal-body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 0px;
     }
 }
 
@@ -611,6 +683,7 @@ body {
 }
 
 .sidebar-overlay {
+    cursor: pointer;
     background-color: rgba(0, 0, 0, 1);
     opacity: 0;
     /* visibility: hidden; */

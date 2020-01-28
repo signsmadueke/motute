@@ -3,7 +3,7 @@ $("#menu").click(function () {
     var $sidebar = $('#sidebar');
     var $menu = $('#menu');
     $sidebar.toggleClass("hide");
-    $body.toggleClass("modal-open");
+    $body.toggleClass("sidebar-opened");
 });
 
 $(".menu").click(function () {
