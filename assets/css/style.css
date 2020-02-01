@@ -21,7 +21,7 @@
 @media (min-width: 1230px) {
     .container {
         margin: 0 auto;
-        max-width: 80vw;
+        max-width: 1380px;
     }
 
     .container.fullwidth {
@@ -33,7 +33,7 @@
 
 @media (min-width: 992px) {
     .container {
-        max-width: 80vw;
+        max-width: 1380px;
     }
 
     .container.fullwidth {
@@ -43,8 +43,8 @@
 
 .container {
     width: 100%;
-    padding-right: 30px;
-    padding-left: 30px;
+    /* padding-right: 0; */
+    /* padding-left: 0; */
     margin-right: auto;
     margin-left: auto;
 }
@@ -951,7 +951,7 @@ form .form-group .pre-icon {
 }*/
 
 #home #hero {
-    min-height: 768px;
+    min-height: 100vh;
     background-image: url('../images/hero.jpg');
     opacity: 1;
     background-size: cover;

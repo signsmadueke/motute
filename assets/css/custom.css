@@ -1435,6 +1435,7 @@ h6,
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    margin: 0 !important;
 }
 
 .check input {
