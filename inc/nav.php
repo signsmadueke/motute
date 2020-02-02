@@ -108,45 +108,61 @@
                             <a class="nav-link sub-menu-link dark" href="cart.php"><img class="svg icon" alt="" src="assets/images/icons/carts.svg" style="width: 32px;"></a>
 
                             <div class="sub-menu">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <h3>Cart</h3>
+                                <h3>Cart</h3>
+                                <div class="cart-head">
+                                    <p>Course Name & Details</p>
+                                    <p>Price</p>
+                                </div>
+                                <div class="cart-item">
+                                    <img class="cart-item-image" src="assets/images/courses/1.jpg" alt="">
+                                    <div class="cart-item-details">
+                                        <p>Become a UX Designer Learn the Skills & Get...</p>
+                                        <div class="cart-item-tutor">
+                                            <img src="assets/images/placeholders/guy.png" alt="">
+                                            <p>Daniel Hughes</p>
+                                        </div>
                                     </div>
-                                    <div class="col-12">
-                                        <table class="table table-striped">
-                                            <thead>
-                                            <tr>
-                                              <th scope="col" colspan="2">Course Name & Details</th>
-                                              <th scope="col">Price</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                  <td><img class="course-img" src="assets/images/courses/1.jpg" alt="image"></td>
-                                                  <td><p>Become a UX Designer Learn the Skills & Get...</p>
-                                                    <div class="align-items-center no-gutters d-flex teacher">
-                                                        <div class="col-auto">
-                                                            <a href="#"><img src="assets/images/placeholders/guy.png" alt=""></a>
-                                                        </div>
-                                                        <div class="col-9">
-                                                            <a href="#"><p>Daniel Hughes</p></a>
-                                                        </div>
-                                                    </div>
-                                                  </td>
-                                                  <td><p>$95.6</p></td>
-                                                </tr>
-                                                <tr>
-                                                  <td>1</td>
-                                                  <td>2</td>
-                                                  <td><p>$95.6</p></td>
-                                                </tr>
-                                                <tr>
-                                                  <td>1</td>
-                                                  <td>3</td>
-                                                  <td><p>$95.6</p></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                    <div class="cart-item-price">
+                                        $95.6
+                                    </div>
+                                </div>
+                                <div class="cart-item">
+                                    <img class="cart-item-image" src="assets/images/courses/1.jpg" alt="">
+                                    <div class="cart-item-details">
+                                        <p>Become a UX Designer Learn the Skills & Get...</p>
+                                        <div class="cart-item-tutor">
+                                            <img src="assets/images/placeholders/guy.png" alt="">
+                                            <p>Daniel Hughes</p>
+                                        </div>
+                                    </div>
+                                    <div class="cart-item-price">
+                                        $95.6
+                                    </div>
+                                </div>
+                                <div class="cart-item">
+                                    <img class="cart-item-image" src="assets/images/courses/1.jpg" alt="">
+                                    <div class="cart-item-details">
+                                        <p>Become a UX Designer Learn the Skills & Get...</p>
+                                        <div class="cart-item-tutor">
+                                            <img src="assets/images/placeholders/guy.png" alt="">
+                                            <p>Daniel Hughes</p>
+                                        </div>
+                                    </div>
+                                    <div class="cart-item-price">
+                                        $95.6
+                                    </div>
+                                </div>
+                                <div class="cart-item">
+                                    <img class="cart-item-image" src="assets/images/courses/1.jpg" alt="">
+                                    <div class="cart-item-details">
+                                        <p>Become a UX Designer Learn the Skills & Get...</p>
+                                        <div class="cart-item-tutor">
+                                            <img src="assets/images/placeholders/guy.png" alt="">
+                                            <p>Daniel Hughes</p>
+                                        </div>
+                                    </div>
+                                    <div class="cart-item-price">
+                                        $95.6
                                     </div>
                                 </div>
                             </div>

@@ -1,3 +1,5 @@
+<body class="body">
+<section id="body">
 <div id="sidebar" class="hide">
     <div id="header">
         <a href="index.php" id="logo" class="">

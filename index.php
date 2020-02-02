@@ -32,34 +32,16 @@
     <title>Home — Motute</title>
 </head>
 <body id="home" class="body">
-    <nav id="nav" class="main navbar" style="
-    box-shadow: none;
-    border: none;
-">
+    <nav id="nav" class="main navbar" style="box-shadow: none;border: none;">
         <div class="container">
-            <div class="align-items-center" style="
-    grid-template-columns: 1fr;
-    display: grid;
-    justify-items: center;
-">
-                <div class="col-auto navbar-brand padding" style="
-">
+            <div class="align-items-center" style="grid-template-columns: 1fr;display: grid;justify-items: center;">
+                <div class="col-auto navbar-brand padding" style="">
                     <div id="logo">
                         <a href="index.php">
                             <img src="assets/images/logo.svg" class="svg logo" alt="Logo">
                         </a>
                     </div>
                 </div>
-
-                
-
-                
-
-
-
-
-
-
             </div>
         </div>
         <div class="bg-wrap">
@@ -71,8 +53,9 @@
         <div class="container pt-100 pb-100 pl-75 pr-75">
             <div class="row align-items-center">
                 <div class="col-lg">
-                    <h2 class="mb-20"><span>Teach</span> and <span>Learn</span><br>
-<span>Anything</span> from <span>Anywhere</span></h2>
+                    <!-- <h2 class="mb-20"><span>Teach</span> and <span>Learn</span><br>
+					<span>Anything</span> from <span>Anywhere</span></h2> -->
+                    <h2 class="mb-20">Coming Soon</h2>
                 </div>
             </div>
             <div class="row">
@@ -84,45 +67,17 @@
         </div>
     </section>
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    <footer id="footer" class="fixed-bottom light" style="
-">
+    <footer id="footer" class="fixed-bottom light" style="">
         <div class="container">
             <div class="row text-center ml-auto mr-auto">
-                <p class="mb-0 ml-auto mr-auto padding text-center" style="
-    color: white;
-">© Copyright 2019. All Rights Reserved</p>
+                <p class="mb-0 ml-auto mr-auto padding text-center" style="color: white;">© Copyright 2019. All Rights Reserved</p>
             </div>
         </div>
-        <div class="bg-wrap" style="
-    background-color: transparent;
-">
-            <div class="bg" style="
-    background-color: transparent;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
-"></div>
+        <div class="bg-wrap" style="background-color: transparent;">
+            <div class="bg" style="background-color: transparent;background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);"></div>
         </div>
     </footer>
 
     <div class="modal-container"></div>
-    <script src="assets/js/popper.js"></script>
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/bootstrap-select.min.js"></script>
-    <script src="assets/js/owl.carousel.js"></script>
-    <script src="assets/js/custom.js"></script>
-
-
-
 </body>
-
 </html>

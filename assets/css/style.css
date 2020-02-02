@@ -10,7 +10,6 @@
 }
 
 
-
 /*Responsiveness*/
 @media (max-width: 768px) {}
 
@@ -43,8 +42,8 @@
 
 .container {
     width: 100%;
-    /* padding-right: 0; */
-    /* padding-left: 0; */
+    padding-right: 30px;
+    padding-left: 30px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -1725,6 +1724,118 @@ input[type="file"]#change-dp {
     width: 100%;
     padding: 30px;
     margin-bottom: 0;
+}
+
+.cart .sub-menu .cart-head {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 10px 30px;
+    border-bottom: 1px solid var(--background-gray);
+    margin-bottom: 20px;
+}
+
+.cart .sub-menu .cart-head p {
+    font-family: CircularStd;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 19px;
+    letter-spacing: -0.1px;
+    margin: 0;
+}
+
+.cart .sub-menu .cart-head p:nth-child(2) {
+    justify-self: right;
+}
+
+.cart .sub-menu .cart-item {
+    display: grid;
+    grid-template-columns: auto 250px 1fr;
+    grid-column-gap: 15px;
+    background-color: var(--brand-white);
+    padding: 20px 30px;
+    align-items: center;
+    border-bottom: 1px solid var(--background-gray);
+}
+
+.cart .sub-menu .cart-item:nth-of-type(odd) {
+    /* background-color: var(--background-offwhite); */
+}
+
+.cart .sub-menu .cart-item .cart-item-image {
+
+width: 80px;
+
+height: 80px;
+
+object-fit: cover;
+
+border-radius: 10px;
+}
+
+.cart .sub-menu .cart-item .cart-item-details {
+
+display: grid;
+
+grid-template-rows: 1fr;
+
+grid-row-gap: 5px;
+}
+
+.cart .sub-menu .cart-item .cart-item-details p {
+    font-size: 17px;
+    line-height: 22px;
+    font-family: CircularStd;
+    font-style: normal;
+    font-weight: normal;
+    color: var(--text-heading);
+    margin-bottom: 0;
+}
+
+.cart .sub-menu .cart-item .cart-item-details .cart-item-tutor {
+
+display: grid;
+
+grid-template-columns: auto 1fr;
+
+grid-column-gap: 10px;
+
+align-items: center;
+}
+
+.cart .sub-menu .cart-item .cart-item-details .cart-item-tutor img {
+
+width: 20px;
+
+height: 20px;
+
+object-fit: cover;
+}
+
+.cart .sub-menu .cart-item .cart-item-details .cart-item-tutor p {
+
+font-size: 14px;
+
+line-height: 18px;
+}
+
+.cart .sub-menu .cart-item .cart-item-price {
+
+font-size: 22px;
+
+line-height: 35px;
+
+font-family: CircularStd;
+
+font-style: normal;
+
+font-weight: normal;
+
+color: var(--text-heading);
+
+margin-bottom: 0;
+
+text-align: right;
 }
 
 .cart .sub-menu table {

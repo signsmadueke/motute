@@ -101,7 +101,7 @@
             
             <p class="spaced-text mb-30 mt-30 text-center">or</p>
             
-            <button type="button" onclick = "LogInUser()" id = "login-button" class="btn btn-block btn-white btn-sumo"><img class="icon svg" alt="" src="assets/images/icons/social/sumotrust.svg">Login with SumoTrust</button>
+            <button type="button" onclick = "Redirect('https://www.sumotrust.com/app-access.php')" id = "login-button" class="btn btn-block btn-white btn-sumo"><img class="icon svg" alt="" src="assets/images/icons/social/sumotrust.svg">Login with SumoTrust</button>
 
         </form>
         <p class="mb-10 text-center text-form">Forgot your password? <a href="reset-password.php">Reset it</a></p>

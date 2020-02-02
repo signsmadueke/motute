@@ -45,6 +45,14 @@ body {
     grid-column-gap: 20px;
 }
 
+.container {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 #footer {
     margin-left: 0;
     margin-top: 30px;
@@ -244,6 +252,48 @@ body {
     opacity: 1;
 }
 
+.header-actions {
+    border-bottom: 1px solid var(--background-gray) !important;
+    box-shadow: 0px 4px 10px rgba(194, 194, 194, 0.15);
+    background-color: var(--brand-white);
+    padding: 50px;
+}
+
+.header-actions .nav.tabs {
+    overflow-x: scroll;
+    border-bottom: none;
+}
+
+/* width */
+.header-actions .nav.tabs::-webkit-scrollbar {
+    width: 1px;
+    height: 1px;
+}
+ 
+/* button */
+.header-actions .nav.tabs::-webkit-scrollbar-button {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+    width: 0px;
+    height: 0px;
+}
+ 
+/* Handle */
+.header-actions .nav.tabs::-webkit-scrollbar-thumb {
+    background: var(--text-heading);
+    border-radius: 0;
+}
+ 
+/* Handle on hover */
+.header-actions .nav.tabs::-webkit-scrollbar-thumb:hover {
+    background: var(--text-body);
+}
+ 
+/* Track */
+.header-actions .nav.tabs::-webkit-scrollbar-track {
+    background: var(--background-gray);
+}
+ 
+
 .course.tutor-courses .checkmark {
     position: absolute;
     top: 0;
@@ -287,57 +337,6 @@ body {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-}
-
-
-.page-title {
-    margin-bottom: 0;
-}
-
-.header-actions {
-    border-bottom: 1px solid var(--background-gray) !important;
-    box-shadow: 0px 4px 10px rgba(194, 194, 194, 0.15);
-    background-color: var(--brand-white);
-    padding: 50px;
-}
-
-.header-actions .container {
-    display: grid;
-    grid-template-rows: auto auto;
-    grid-column-gap: 30px;
-    grid-row-gap: 20px;
-    -webkit-box-align: center;
-    align-items: center;
-}
-
-.header-actions .first-row {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-column-gap: 30px;
-    -webkit-box-align: center;
-    align-items: center;
-}
-
-.header-actions .first-row div:nth-child(2) {justify-self: right;}
-
-.header-actions .second-row {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    grid-column-gap: 30px;
-    -webkit-box-align: center;
-    align-items: center;
-}
-
-.header-actions .tabs .tab {
-    margin: 0 5px;
-}
-
-.header-actions .tabs .tab a {
-    font-size: 12px;
-}
-
-.header-actions .tabs .tab a span {
-    margin: 0;
 }
 
 .tutor-courses.empty {
@@ -642,7 +641,7 @@ body {
 }
 
 #progressbar li:before {
-    margin-left: 0;
+    mhargin-left: 0;
     /* margin-right: 0; */
 }
 
@@ -719,8 +718,7 @@ body {
     max-width: 500px;
     height: 250px;
     background-color: var(--background-gray);
-    border-radius: 5px;
-    overflow: hidden;
+    border-radius: 5px 5px 0 0;
     background-image: url(../images/placeholders/cover.jpg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -728,24 +726,21 @@ body {
     position: relative;
 }
 
-#main.settings form .course-display-picture:hover .edit-display-picture {
+#main.settings form .edit-display-picture {
     opacity: 1;
     transform: translateY(0);
 }
 
-#main.settings form .course-display-picture .edit-display-picture {
+#main.settings form .edit-display-picture {
     width: 100%;
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-column-gap: 0px;
     background-color: rgba(0, 0, 0, 0.7);
-    bottom: 0;
-    position: absolute;
-    opacity: 0;
-    transform: translateY(100%);
+    border-radius: 0 0 5px 5px;
 }
 
-#main.settings form .course-display-picture a {
+#main.settings form a {
     font-style: normal;
     font-weight: bold;
     font-size: 11px;
@@ -758,7 +753,7 @@ body {
     margin: 0;
 }
 
-#main.settings form .course-display-picture a svg path {
+#main.settings form a svg path {
     fill: var(--brand-white);
 }
 
@@ -804,7 +799,7 @@ body.sidebar-opened {
 
 @media (max-width: 768px) {
     #main, #footer {
-        padding: 0px 30px;
+        padding: 30px 30px;
     }
 
     #nav.navbar {
@@ -820,24 +815,7 @@ body.sidebar-opened {
     }
 
     .header-actions {
-        grid-template-columns: 1fr;
         padding: 30px 30px 0 30px;
-    }
-
-    .header-actions .first-row {
-        display: grid;
-        grid-template-columns: auto;
-        grid-row-gap: 20px;
-    }
-
-    .header-actions .second-row {
-        display: grid;
-        grid-template-columns: auto;
-        grid-row-gap: 20px;
-    }
-
-    .header-actions .first-row div:nth-child(2) {
-        justify-self: left;
     }
 }
 
