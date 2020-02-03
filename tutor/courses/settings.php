@@ -194,9 +194,50 @@
                         </div>
                     </div>
 
-                    <div>
-                        <h5 class="mb-0 text-heading">Banks</h5>
-                        <p class="text-body mb-0">Withdrawals will be paid into this bank account.</p>
+
+                    <div class="form-group">
+                        <div class="mb-30">
+                            <h5 class="mb-0 text-heading">Banks</h5>
+                            <p class="text-body mb-0">Withdrawals will be paid into this bank account.</p>
+                        </div>
+                        <div class="bank-accounts">
+                            <div class="bank-account-choice">
+                                <label class="check">
+                                    <input type="radio" name="bank-input" checked>
+                                    <div class="bank checkmark">
+                                        <div class="radio-box">
+                                            <img class="svg icon" alt="" src="../../assets/images/icons/checkmark.svg">
+                                        </div>
+                                        <h6 class="account-name">SIGNS CHUKWUEBUKA MADUEKE</h6>
+                                        <div class="grid">
+                                            <p class="account-number">9906016555</p>
+                                            <p class="bank-name">Providus Bank</p>
+                                        </div>
+                                        <div class="bank-bg">
+                                            <img class="svg icon" alt="" src="../../assets/images/svgs/bank-bg.svg">
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="bank-account-choice">
+                                <label class="check">
+                                    <input type="radio" name="bank-input">
+                                    <div class="bank checkmark">
+                                        <div class="radio-box">
+                                            <img class="svg icon" alt="" src="../../assets/images/icons/checkmark.svg">
+                                        </div>
+                                        <h6 class="account-name">SIGNS CHUKWUEBUKA MADUEKE</h6>
+                                        <div class="grid">
+                                            <p class="account-number">9906016555</p>
+                                            <p class="bank-name">Providus Bank</p>
+                                        </div>
+                                        <div class="bank-bg">
+                                            <img class="svg icon" alt="" src="../../assets/images/svgs/bank-bg.svg">
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
                     </div>
                 </form>
             </div>

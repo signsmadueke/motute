@@ -733,6 +733,7 @@ body {
 
 #main.settings form .edit-display-picture {
     width: 100%;
+    max-width: 500px;
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-column-gap: 0px;

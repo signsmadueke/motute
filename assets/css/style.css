@@ -1905,3 +1905,88 @@ text-align: right;
 .table-striped tbody tr:nth-of-type(odd) {
     background-color: var(--background-offwhite);
 }
+
+.bank-accounts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+}
+
+.bank-accounts .bank-account-choice .check {
+    padding: 0;
+}
+
+.bank-accounts .bank-account-choice .bank {
+    position: relative;
+    width: 300px;
+    min-height: 150px;
+    height: 150px;
+    background: linear-gradient(116.57deg, #2A2A2A 0%, #111111 100%);
+    border: 2px solid white !important;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.bank-accounts .bank-account-choice .bank .radio-box {
+    order: 0;flex: none;align-self: flex-end;padding: 6px 5px;border: 1px solid #ffffff;border-radius: 6px;line-height: 0;
+}
+
+.bank-accounts .bank-account-choice .check input:checked ~ .bank .radio-box {
+    background-color: var(--brand-primary);
+    border: 1px solid var(--brand-primary);
+}
+
+.bank-accounts .bank-account-choice .check input:checked ~ .bank  {
+    background-color: var(--brand-primary);
+    border: 2px solid var(--brand-primary) !important;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.bank-accounts .bank-account-choice .bank .radio-box .svg {
+    opacity: 0;
+}
+
+.bank-accounts .bank-account-choice .check input:checked ~ .bank .radio-box .svg {
+    opacity: 1;
+}
+
+.bank-accounts .bank-account-choice .bank:after {
+    content: none !important;
+}
+
+.bank-accounts .bank-account-choice .bank .account-name {
+    color: white;height: 50px;width: 100%;flex: none;order: 1;text-align: right;margin: 10px 0px;font-style: normal;font-weight: bold;font-size: 16px;line-height: 19px;display: flex;align-items: flex-end;place-content: flex-end;text-align: right;font-family: ProximaNova;letter-spacing: 0;
+}
+
+.bank-accounts .bank-account-choice .bank .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 0px;
+    order: 2;
+}
+
+.bank-accounts .bank-account-choice .bank .account-number {
+    margin: 0;
+    text-align: left;
+    font-family: CircularStdBold;
+    font-style: normal;
+    font-weight: 450;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.1px;
+    color: var(--brand-white);
+}
+
+.bank-accounts .bank-account-choice .bank .bank-name {
+    order: 2;margin: 0;text-align: right;font-family: CircularStd;font-style: normal;font-weight: 450;font-size: 16px;line-height: 20px;letter-spacing: -0.1px;color: var(--brand-white);
+}
+
+.bank-accounts .bank-account-choice .bank .bank-bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
