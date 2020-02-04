@@ -305,7 +305,7 @@ h6,
     }
 
     .tabs .tab a {
-        font-size: 13px !important;
+        font-size: 11px !important;
     }
 
     #footer p, #footer a {
@@ -1090,14 +1090,23 @@ h6,
 }
 
 .btn-sumo {
-    color: #2D3E9F !important;
+    color: #ffffff !important;
     border: 1px solid rgba(45, 62, 159, 0.1) !important;
+    background-color: #2D3E9F !important;
 }
 
 .btn-sumo:hover,
 .btn-sumo.hover {
-    color: #2D3E9F !important;
-    box-shadow: 0 4px 10px rgba(45, 62, 159, 0.05);
+    color: #ffffff !important;
+    box-shadow: 0 4px 10px rgba(45, 62, 159, 0.2);
+}
+
+.btn-sumo:focus {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.btn-sumo:focus .svg {
+    opacity: 0.5;
 }
 /*----------------------------------------------------------------------------------------
                                     TABS
@@ -1622,6 +1631,10 @@ h6,
         padding: 15px 20px;
         font-size: 14px;
         line-height: 18px;
+    }
+
+    .input-group-text {
+        padding: 15px 20px;
     }
 }
 

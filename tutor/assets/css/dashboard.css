@@ -709,7 +709,7 @@ body {
     }
 
     #main.settings .tab-content .tab-pane {
-        padding: 30px 15px !important;
+        padding: 50px 15px !important;
     }
 }
 
@@ -721,7 +721,7 @@ body {
     border-radius: 5px 5px 0 0;
     background-image: url(../images/placeholders/cover.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     position: relative;
 }
