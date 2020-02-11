@@ -1,17 +1,17 @@
 "use strict";
 
 $(document).ready(function () {
-    $(".menu-icon").click(function () {
-        var $body = $('body');
-        var $nav = $('nav.main');
-        $body.toggleClass("nav-active");
-        if ($nav.hasClass('proto')) {
-            $nav.removeClass('proto show-on-scroll show');
-        }
-        if ((scrollTop > height * 1) && !$body.hasClass('nav-active') && !$nav.hasClass('proto')) {
-            $nav.addClass('proto show-on-scroll show');
-        }
-    });
+    // $(".menu-icon").click(function () {
+    //     var $body = $('body');
+    //     var $nav = $('nav.main');
+    //     $body.toggleClass("nav-active");
+    //     if ($nav.hasClass('proto')) {
+    //         $nav.removeClass('proto show-on-scroll show');
+    //     }
+    //     if ((scrollTop > height * 1) && !$body.hasClass('nav-active') && !$nav.hasClass('proto')) {
+    //         $nav.addClass('proto show-on-scroll show');
+    //     }
+    // });
 
     $(".accordion").click(function () {
         $(this).toggleClass("active");
@@ -26,115 +26,41 @@ $(document).ready(function () {
 // text.textContent = text.textContent.slice(0,200).trim().concat('...')
 
 $(document).ready(function(){
-    $(".calendar-container").simpleCalendar({
-        fixedStartDay: false,
-        insertEvent: false, // can insert events
-        displayEvent: false, // display existing event
-    });
+    // $('.categories').flickity({
+    //     // options
+    //     cellAlign: 'left',
+    //     contain: true,
+    //     freeScroll: true,
+    //     resize: false,
+    //     autoPlay: true,
+    //     wrapAround: true,
+    //     draggable: true,
+    // });
 
-
-
-    $('.courses.slider').owlCarousel({
-        loop: false,
-        margin: 30,
+    $('#categories').owlCarousel({
+        loop: true,
         nav: true,
-        navText: ['',''],
-        dotsEach: true,
-        autoplay: false,
-        autoplayHoverPause: true,
-        rewind: true,
-        margin: 50,
-        lazyLoad: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            700: {
-                items: 2
-            },
-            1200: {
-                items: 3
-            },
-            1600: {
-                items: 4
-            }
-        }
-    });
-
-    $('.mega-menu.courses').owlCarousel({
-        loop: false,
-        margin: 30,
-        nav: true,
-        navText: ['',''],
-        dotsEach: true,
-        autoplay: false,
-        autoplayHoverPause: true,
-        rewind: true,
-        margin: 50,
-        // lazyLoad: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            700: {
-                items: 1
-            },
-            1200: {
-                items: 2
-            },
-            1600: {
-                items: 3
-            }
-        }
-    });
-
-    $('.related.courses.slider').owlCarousel({
-        loop: false,
-        margin: 30,
-        nav: true,
-        navText: ['',''],
-        dotsEach: true,
-        autoplay: false,
-        autoplayHoverPause: true,
-        rewind: true,
-        margin: 50,
-        lazyLoad: true,
-        responsive: {
-            0: {
-                items: 2
-            },
-            700: {
-                items: 3
-            },
-            1200: {
-                items: 4
-            },
-            1600: {
-                items: 5
-            }
-        }
-    });
-
-    $('.testimonial-carousel').owlCarousel({
-        loop: false,
-        margin: 0,
-        nav: false,
+        dots: true,
         autoplay: true,
         autoplayHoverPause: true,
-        autoHeight: false,
-        items: 1,
-        dots: true,
-        navText: ['', ''],
-        rewind: true
-    });
-
-    tippy('.playlist .lesson', {
-        placement: 'top',
-        theme: 'pop',
-        duration: [275, 250],
-        arrow: true,
-        delay: [500],
-        followCursor: 'horizontal',
+        autoplayTimeout: 8500,
+        smartSpeed: 200,
+        // center: true,
+        lazyLoad: true,
+        margin: 50,
+        navText: ['<svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.37271 5.89942C0.784586 5.44098 0.78936 4.54574 1.37271 4.08124L5.48059 0.967695C6.00479 0.570382 6.75732 0.94427 6.75732 1.60203C6.75732 1.85256 6.63937 2.08847 6.43894 2.23878L3.20177 4.66667C2.97955 4.83333 2.97955 5.16667 3.20177 5.33333L6.43967 7.76176C6.63964 7.91174 6.75732 8.14711 6.75732 8.39706C6.75732 9.05415 6.00483 9.42695 5.48207 9.02885L1.37271 5.89942Z" fill="#2A2A2A"/></svg>','<svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.76328 4.10058C6.3514 4.55902 6.34663 5.45426 5.76328 5.91876L1.6554 9.0323C1.1312 9.42962 0.378662 9.05573 0.378662 8.39797C0.378662 8.14744 0.496617 7.91153 0.697041 7.76122L3.93422 5.33333C4.15644 5.16667 4.15644 4.83333 3.93422 4.66667L0.696312 2.23824C0.496347 2.08826 0.378662 1.85289 0.378662 1.60294C0.378662 0.945852 1.13116 0.573052 1.65392 0.971152L5.76328 4.10058Z" fill="#2A2A2A"/></svg>'],
+        items: 3,
+        responsive: {
+            0: {
+                items: 1
+            },
+            576: {
+                items: 2
+            },
+            800: {
+                items: 3
+            }
+        }
     });
 });
 
@@ -173,33 +99,33 @@ window.addEventListener('load', function () {
     //                      SHOW NAVIGATION ON SCROLL DOWN
     //------------------------------------------------------------------------
 
-    var $window = $(window);
-    $window.on('scroll', function () {
-        var $body = $('body');
-        var $nav = $('nav.main');
-        var height = $nav.outerHeight();
-        var scrollTop = $window.scrollTop();
-        if ((scrollTop > height * 2)) {
-            $nav.addClass('proto');
-        } else {
-            $nav.removeClass('proto');
-        }
+    // var $window = $(window);
+    // $window.on('scroll', function () {
+    //     var $body = $('body');
+    //     var $nav = $('nav.main');
+    //     var height = $nav.outerHeight();
+    //     var scrollTop = $window.scrollTop();
+    //     if ((scrollTop > height * 2)) {
+    //         $nav.addClass('proto');
+    //     } else {
+    //         $nav.removeClass('proto');
+    //     }
 
-    });
+    // });
 
 
-    //------------------------------------------------------------------------
-    //                      HIDE NAVIGATION ON SCROLL DOWN
-    //------------------------------------------------------------------------
+    // //------------------------------------------------------------------------
+    // //                      HIDE NAVIGATION ON SCROLL DOWN
+    // //------------------------------------------------------------------------
 
-    var prev = 0;
-    var $window = $(window);
-    $window.on('scroll', function () {
-        var nav = $('nav.hide-on-scroll');
-        var scrollTop = $window.scrollTop();
-        nav.toggleClass('hide', scrollTop > prev);
-        prev = scrollTop;
-    });
+    // var prev = 0;
+    // var $window = $(window);
+    // $window.on('scroll', function () {
+    //     var nav = $('nav.hide-on-scroll');
+    //     var scrollTop = $window.scrollTop();
+    //     nav.toggleClass('hide', scrollTop > prev);
+    //     prev = scrollTop;
+    // });
 
 
 

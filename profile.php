@@ -1,6 +1,7 @@
 <?php
-include 'api/v0/php/run_cookie_hot.php';
+include 'api/v0/php/run_cookie_warm.php';
 $title = 'Profile';
+$extraNavClasses = '';
 require_once 'inc/header.php';
 ?>
 
@@ -593,3 +594,12 @@ require_once 'inc/header.php';
 
     
 <?php require_once 'inc/footer.php'; ?>
+
+<?php require_once 'inc/scripts.php'; ?>
+
+<script>
+    var cw = $('.user-pic-div').height();
+    $('.user-pic').css({'width':cw+'px'});
+</script>
+</body>
+</html>

@@ -134,7 +134,7 @@
                     <div>
                         <h5 class="mb-10 text-heading">Delete Course</h5>
                         <p class="text-body mb-20">Make sure you’re really wan to do this because once you delete a course, it cannot be recovered.<br>A course can only be deleted if it has no students.</p>
-                        <button type="button" class="btn btn-danger"><img width="20px" src="../../assets/images/icons/delete.svg" class="svg icon mr-10" alt="">Delete Course</button>
+                        <button type="button" class="btn btn-danger-sm"><img width="20px" src="../../assets/images/icons/delete.svg" class="svg icon mr-10" alt="">Delete Course</button>
                     </div>
                 </form>
             </div>
@@ -194,7 +194,6 @@
                         </div>
                     </div>
 
-
                     <div class="form-group">
                         <div class="mb-30">
                             <h5 class="mb-0 text-heading">Banks</h5>
@@ -210,8 +209,8 @@
                                         </div>
                                         <h6 class="account-name">SIGNS CHUKWUEBUKA MADUEKE</h6>
                                         <div class="grid">
-                                            <p class="account-number">9906016555</p>
-                                            <p class="bank-name">Providus Bank</p>
+                                            <p class="account-number">0097895364</p>
+                                            <p class="bank-name">Diamond Bank</p>
                                         </div>
                                         <div class="bank-bg">
                                             <img class="svg icon" alt="" src="../../assets/images/svgs/bank-bg.svg">
@@ -219,14 +218,14 @@
                                     </div>
                                 </label>
                             </div>
-                            <div class="bank-account-choice">
+                            <div class="bank-account-choice sumo">
                                 <label class="check">
                                     <input type="radio" name="bank-input">
                                     <div class="bank checkmark">
                                         <div class="radio-box">
                                             <img class="svg icon" alt="" src="../../assets/images/icons/checkmark.svg">
                                         </div>
-                                        <h6 class="account-name">SIGNS CHUKWUEBUKA MADUEKE</h6>
+                                        <h6 class="account-name">Signs Madueke</h6>
                                         <div class="grid">
                                             <p class="account-number">9906016555</p>
                                             <p class="bank-name">Providus Bank</p>

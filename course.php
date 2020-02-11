@@ -752,6 +752,18 @@
     <script src="assets/js/video.js"></script>
     <script src="assets/js/tippy.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script>
+    $(document).ready(function(){       
+        tippy('.playlist .lesson', {
+            placement: 'top',
+            theme: 'pop',
+            duration: [275, 250],
+            arrow: true,
+            delay: [500],
+            followCursor: 'horizontal',
+        });
+    });
+    </script>
 </body>
 
 </html>

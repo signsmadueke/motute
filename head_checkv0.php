@@ -1,27 +1,93 @@
 <?php if ($control_key == '1'){ ?>
 
-<div class="col-auto d-flex hidden-md hidden-sm ml-auto pl-0 pr-0" style="">
-	<ul class="navbar-nav">
-		<li class="nav-item">
-			<a class="nav-link dark" href="#"><img class="svg icon" alt="" src="assets/images/icons/bell.svg" style="width: 32px;"></a>
-		</li>
-	</ul>
-</div>
+<ul class="navbar-nav notifications">
+	<li class="nav-item">
+		<a class="nav-link sub-menu-link" href="#">
+			<img class="svg icon" alt="" src="assets/images/icons/bell.svg" style="height: 25px;">
+			<div class="pending"></div>
+		</a>
+		<div class="sub-menu">
+            <h3>Notifications</h3>
+            <div class="cart-head">
+                <p>Notification Name & Details</p>
+                <p>Price</p>
+            </div>
+        </div>
+	</li>
+</ul>
+    
+<ul class="navbar-nav cart">
+    <li class="nav-item">
+        <a class="nav-link sub-menu-link" href="cart.php">
+        	<img class="svg icon" alt="" src="assets/images/icons/basket.svg" style="height: 25px;">
+        	<div class="pending"></div>
+        </a>
+        <div class="sub-menu">
+            <h3>Cart</h3>
+            <div class="cart-head">
+                <p>Course Name & Details</p>
+                <p>Price</p>
+            </div>
+            <div class="cart-item">
+                <img class="cart-item-image" src="assets/images/courses/1.jpg" alt="">
+                <div class="cart-item-details">
+                    <p>Become a UX Designer Learn the Skills & Get...</p>
+                    <div class="cart-item-tutor">
+                        <img src="assets/images/placeholders/guy.png" alt="">
+                        <p>Daniel Hughes</p>
+                    </div>
+                </div>
+                <div class="cart-item-price">
+                    $95.6
+                </div>
+            </div>
+            <div class="cart-item">
+                <img class="cart-item-image" src="assets/images/courses/1.jpg" alt="">
+                <div class="cart-item-details">
+                    <p>Become a UX Designer Learn the Skills & Get...</p>
+                    <div class="cart-item-tutor">
+                        <img src="assets/images/placeholders/guy.png" alt="">
+                        <p>Daniel Hughes</p>
+                    </div>
+                </div>
+                <div class="cart-item-price">
+                    $95.6
+                </div>
+            </div>
+            <div class="cart-item">
+                <img class="cart-item-image" src="assets/images/courses/1.jpg" alt="">
+                <div class="cart-item-details">
+                    <p>Become a UX Designer Learn the Skills & Get...</p>
+                    <div class="cart-item-tutor">
+                        <img src="assets/images/placeholders/guy.png" alt="">
+                        <p>Daniel Hughes</p>
+                    </div>
+                </div>
+                <div class="cart-item-price">
+                    $95.6
+                </div>
+            </div>
+            <div class="cart-item">
+                <img class="cart-item-image" src="assets/images/courses/1.jpg" alt="">
+                <div class="cart-item-details">
+                    <p>Become a UX Designer Learn the Skills & Get...</p>
+                    <div class="cart-item-tutor">
+                        <img src="assets/images/placeholders/guy.png" alt="">
+                        <p>Daniel Hughes</p>
+                    </div>
+                </div>
+                <div class="cart-item-price">
+                    $95.6
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>
 
-<div class="col-auto d-flex hidden-md hidden-sm ml-auto pl-0 pr-0" style="">
-	<ul class="navbar-nav">
-		<li class="nav-item">
-			<a class="nav-link dark" href="#"><img class="svg icon" alt="" src="assets/images/icons/carts.svg" style="width: 32px;"></a>
-		</li>
-	</ul>
-</div>
-
-<div class="col-auto align-items-center d-flex hidden-md hidden-sm ml-auto pr-0 pl-0 show" style="">
-<ul class="navbar-nav">
-
-	<li class="nav-item account">
-		<a class="nav-link padding sub-menu-link" href="#">
-			<img class="user ml-0" alt="" src="assets/images/placeholders/dp.jpg">
+<ul class="navbar-nav account">
+	<li class="nav-item">
+		<a class="nav-link sub-menu-link" href="#">
+			<img class="user" alt="" src="assets/images/placeholders/dp.jpg">
 		</a>
 		<ul class="sub-menu">
 			<li>
@@ -68,23 +134,84 @@
 		</ul>
 	</li>
 </ul>
-</div>
-<div class="col-auto ml-auto pr-0 hidden-lg navbar-nav">
-<button class="collapsed hidden-lg navbar-toggler" type="button" data-toggle="collapse" data-target=".main-menu-collapse" aria-controls="navbarMenuContent" aria-expanded="false" aria-label="Toggle navigation"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-</div>
-<?php } else { ?>
+<?php } else { ?>    
+<ul class="navbar-nav cart">
+    <li class="nav-item">
+        <a class="nav-link sub-menu-link" href="cart.php">
+        	<img class="svg icon" alt="" src="assets/images/icons/basket.svg" style="height: 25px;">
+        	<div class="pending"></div>
+        </a>
+        <div class="sub-menu">
+            <h3>Cart</h3>
+            <div class="cart-head">
+                <p>Course Name & Details</p>
+                <p>Price</p>
+            </div>
+            <div class="cart-item">
+                <img class="cart-item-image" src="assets/images/courses/1.jpg" alt="">
+                <div class="cart-item-details">
+                    <p>Become a UX Designer Learn the Skills & Get...</p>
+                    <div class="cart-item-tutor">
+                        <img src="assets/images/placeholders/guy.png" alt="">
+                        <p>Daniel Hughes</p>
+                    </div>
+                </div>
+                <div class="cart-item-price">
+                    $95.6
+                </div>
+            </div>
+            <div class="cart-item">
+                <img class="cart-item-image" src="assets/images/courses/1.jpg" alt="">
+                <div class="cart-item-details">
+                    <p>Become a UX Designer Learn the Skills & Get...</p>
+                    <div class="cart-item-tutor">
+                        <img src="assets/images/placeholders/guy.png" alt="">
+                        <p>Daniel Hughes</p>
+                    </div>
+                </div>
+                <div class="cart-item-price">
+                    $95.6
+                </div>
+            </div>
+            <div class="cart-item">
+                <img class="cart-item-image" src="assets/images/courses/1.jpg" alt="">
+                <div class="cart-item-details">
+                    <p>Become a UX Designer Learn the Skills & Get...</p>
+                    <div class="cart-item-tutor">
+                        <img src="assets/images/placeholders/guy.png" alt="">
+                        <p>Daniel Hughes</p>
+                    </div>
+                </div>
+                <div class="cart-item-price">
+                    $95.6
+                </div>
+            </div>
+            <div class="cart-item">
+                <img class="cart-item-image" src="assets/images/courses/1.jpg" alt="">
+                <div class="cart-item-details">
+                    <p>Become a UX Designer Learn the Skills & Get...</p>
+                    <div class="cart-item-tutor">
+                        <img src="assets/images/placeholders/guy.png" alt="">
+                        <p>Daniel Hughes</p>
+                    </div>
+                </div>
+                <div class="cart-item-price">
+                    $95.6
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>
 
-<div class="col-auto d-flex hidden-md hidden-sm ml-auto pl-0 pr-0" style="">
-	<ul class="navbar-nav">
-		<li class="nav-item">
-			<a class="nav-link dark" href="#"><img class="svg icon" alt="" src="assets/images/icons/carts.svg" style="width: 32px;"></a>
-		</li>
-	</ul>
-</div>
-
-<div class="col-auto align-items-center d-flex ml-auto pr-0 show" style="">
-	<a class="btn btn-primary mr-10 h-100 hidden-sm" href="register.php">Register</a>
-	<a class="btn btn-secondary mr-10 h-100 hidden-sm" href="login.php">Sign In</a>
-	<button class="collapsed hidden-lg navbar-toggler" type="button" data-toggle="collapse" data-target=".main-menu-collapse" aria-controls="navbarMenuContent" aria-expanded="false" aria-label="Toggle navigation"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-</div>
+<ul class="navbar-nav account">
+    <li class="nav-item">
+        <a class="nav-link sub-menu-link" href="cart.php"><img class="svg icon" alt="" src="assets/images/icons/user.svg" style="height: 25px;"></a>
+        <div class="sub-menu">
+            <h3>Account</h3>
+            <p>Only users can buy courses.<br>Login or Create and account to use Motute.</p>
+            <a class="btn btn-primary" href="register.php">Create Account</a>
+			<a class="btn btn-secondary" href="login.php">Login</a>
+        </div>
+    </li>
+</ul>
 <?php } ?>

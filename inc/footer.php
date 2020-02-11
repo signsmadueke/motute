@@ -36,13 +36,3 @@
         <div class="bg"></div>
     </div>
 </footer>
-
-<?php require_once 'scripts.php'; ?>
-
-<script>
-    var cw = $('.user-pic-div').height();
-    $('.user-pic').css({'width':cw+'px'});
-</script>
-</body>
-
-</html>
