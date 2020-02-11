@@ -3,7 +3,7 @@
         <div class="col-auto navbar-brand no-gutters">
             <div id="logo">
                 <a href="index.php">
-                    <!-- <img src="assets/images/logo.svg" class="svg logo show-desktop" alt="Logo"> -->
+                    <img src="assets/images/logo.svg" class="svg logo show-desktop" alt="Logo">
                     <img src="assets/images/favicon.svg" class="svg logo show-mobile" alt="Logo">
                 </a>
             </div>
