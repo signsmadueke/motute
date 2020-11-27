@@ -1,5 +1,4 @@
 <?php
-include 'api/v0/php/run_cookie_hot.php';
 $title = 'Profile';
 require_once 'inc/header.php';
 ?>
